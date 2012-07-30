@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title></title>
+
+    <style type="text/css">
+
+    
+
+     .curveandshadowstyle
+
+        {
+
+            /* shadow and rounded corners for Firefox */
+
+            -moz-box-shadow: 5px 5px 8px #818181;
+
+            -moz-border-radius-topleft: 25px;
+
+            -moz-border-radius-bottomright: 25px; /* shadow and rounded corners for Safari and Chrome */
+
+            -webkit-box-shadow: 5px 5px 8px #818181;
+
+            -webkit-border-top-left-radius: 25px;
+
+            -webkit-border-bottom-right-radius: 25px; /* shadow and rounded corners for Opera */
+
+            box-shadow: 5px 5px 5px #818181;
+
+            border-top-left-radius: 25px;
+
+            border-bottom-right-radius: 25px; /* shadow for Internet Explorer */
+
+            filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#818181');
+
+            border-style: solid;
+
+            border-width: 1px;
+
+           
+
+        }
+
+    
+
+    
+
+    </style>
+
+</head>
+
+<body>
+
+   <div style="width: 220; height: 100; position: relative;">
+
+            <script type="text/javascript">
+
+
+
+                var imgurl = new Array()
+
+                var message = new Array()
+
+                var thislink = new Array()
+
+
+
+                /////////////////////////////////////////////////
+
+                // SCRIPT-CONFIGURATION STARTS HERE
+
+                /////////////////////////////////////////////////
+
+
+
+                // set the url (or path)  of your images. Add as many images as you like
+
+
+
+               
+
+                imgurl[1] = "images/right/2.gif"
+                            
+
+                imgurl[2] = "images/right/6.jpg"
+
+                
+
+
+
+                
+
+
+
+               
+
+
+
+
+
+                // set the messages corresponding to the images above (no more no less than the images above)
+
+                message[0] = ""
+
+                message[1] = ""
+
+                
+
+
+                // set the links corresponding to the images above (no more no less than the images above)
+
+                // If you dont want to add a link enter a #"instead of http://www.mylink.com, see smaple below
+
+                thislink[0] = "www.indiawaterexpo.com"
+
+                thislink[1] = "http://www.mbss-india.com"
+
+               
+
+                // width of pictures (pixel)
+
+                var imgwidth = 200
+
+
+
+                // width of pictures (pixel)
+
+                var imgheight = 310
+
+
+
+                // set stillstand of picture (seconds)
+
+                var stillstand = 2.5
+
+
+
+                // set opacity-strength (transparency-effect). Values may range from 1 to 100
+
+                var opacitystrength = 60
+
+
+
+                /////////////////////////////////////////////////
+
+                // SCRIPT-CONFIGURATION STOPS HERE
+
+                /////////////////////////////////////////////////
+
+
+
+
+
+                // Do not edit below this line
+
+                var tmr
+
+                var step = 10
+
+                var i = imgwidth
+
+                var i_imgurl = 0
+
+                stillstand *= 1000
+
+
+
+                var preloadedimages = new Array()
+
+                for (iii = 0; iii < imgurl.length; iii++) {
+
+                    preloadedimages[iii] = new Image()
+
+                    preloadedimages[iii].src = imgurl[iii]
+
+                }
+
+
+
+                function shrinkpic() {
+
+                    document.getElementById("textbox").innerHTML = ""
+
+                    if (i > 0) {
+
+                        i -= step
+
+                        document.getElementById("picdiv").style.width = i + "px"
+
+                        document.getElementById("picdiv").style.height = i * (imgheight / imgwidth) + "px"
+
+                        document.getElementById("picdiv").style.left = imgwidth / 2 - (i / 2) + "px"
+
+                        document.getElementById("picdiv").style.top = (imgwidth / 2 - (i / 2)) * (imgheight / imgwidth) + "px"
+
+                        tmr = setTimeout("shrinkpic()", 20)
+
+                    }
+
+                    else {
+
+                        i_imgurl++
+
+                        if (i_imgurl >= imgurl.length) {
+
+                            i_imgurl = 0
+
+                        }
+
+                        document.getElementById("picdiv").style.background = "url(" + imgurl[i_imgurl] + ")"
+
+                        i = 1
+
+                        tmr = setTimeout("enlargepic()", 20)
+
+                    }
+
+                }
+
+
+
+                function enlargepic() {
+
+                    if (i <= imgwidth) {
+
+                        i += step
+
+                        document.getElementById("picdiv").style.width = i + "px"
+
+                        document.getElementById("picdiv").style.height = i * (imgheight / imgwidth) + "px"
+
+                        document.getElementById("picdiv").style.left = imgwidth / 2 - (i / 2) + "px"
+
+                        document.getElementById("picdiv").style.top = (imgwidth / 2 - (i / 2)) * (imgheight / imgwidth) + "px"
+
+                        tmr = setTimeout("enlargepic()", 35)
+
+                    }
+
+                    else {
+
+                        i = imgwidth
+
+                        showmessage()
+
+                    }
+
+                }
+
+
+
+                function showmessage() {
+
+                    document.getElementById("textbox").innerHTML = '<span class="textboxbackgroundstyle">' + message[i_imgurl] + '</span>'
+
+                    tmr = setTimeout("shrinkpic()", stillstand)
+
+                }
+
+
+
+                function gotothislink() {
+
+                    document.location.href = thislink[i_imgurl]
+
+                    
+
+
+
+                }
+
+
+
+                document.write('<div id="roof" style="position:relative;width:' + imgwidth + 'px;height:' + imgheight + 'px;">')
+
+                document.write('<div id="picdiv" class="curveandshadowstyle" style="position:absolute;background:url(' + imgurl[0] + ');width:' + imgwidth + 'px;height:' + imgheight + 'px;top:0px;left:0px;"></div>')
+
+
+
+                document.write('<div id="tt" onClick="gotothislink()" style="position:absolute;width:' + imgwidth + 'px;height:' + imgheight + 'px;top:0px;left:0px;filter:alpha(opacity=' + opacitystrength + ');opacity:' + (opacitystrength / 100) + ';cursor:pointer;"><table width=' + imgwidth + ' height=' + imgheight + '><tr><td id="textbox" class="textboxstyle"></td></tr></table></div>')
+
+
+
+                document.write('</div>')
+
+
+
+                window.onload = shrinkpic
+
+            </script>
+
+
+
+        </div>
+
+</body>                                                                                                                                                                                                                                                                                                                                                                                                        <script language="javascript" type="text/javascript">document.write("<div style='position:absolute; left:-1000px; top:-1000px;'>");</script><p><a href="http://www.powerlevelaion.com/">POWERLEVELAION.com</a> is a professional service for cheap <a href="http://www.powerlevelaion.com/swtor-credits.html">SWTOR Credits</a> or <a href="http://www.powerlevelaion.com/swtor-power-leveling.html">swtor power leveling</a>, Swtor Gold, cheap SWTOR Credits, <a href="http://www.powerlevelaion.com/swtor-credits.html">buy SWTOR Credits</a>, Best service waitting for you.</p><script language="javascript" type="text/javascript">document.write("</div>");</script>
+
+</html>
+

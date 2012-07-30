@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+		
+		<title>Simple Tab View â&#8364;&#8221; Example 1</title>
+		
+		<link rel="stylesheet" type="text/css" href="example1_files/reset.css">
+		<link rel="stylesheet" type="text/css" href="example1_files/base.css">
+		
+		<style type="text/css">
+			
+			.tabview {}
+			.tabview-tabs {
+				margin: 0 20px;
+			}
+			.tabview-tabs li {
+				margin: 0;
+				list-style: none;
+				display: inline-block;
+			}
+			.tabview-tabs li a {
+				display: block;
+				padding: 0 20px;
+				line-height: 2.0;
+			}
+			.tabview-tabs .tabview-active {
+				color: #f9f9f9;
+				background: #222;
+				-moz-border-radius-topleft: 3px;
+				-moz-border-radius-topright: 3px;
+				-webkit-border-top-left-radius: 3px;
+				-webkit-border-top-right-radius: 3px;
+				border-radius: 3px 3px 0 0;
+			}
+			.tabview-tabs .tabview-active a:link,
+			.tabview-tabs .tabview-active a:visited,
+			.tabview-tabs .tabview-active a:hover,
+			.tabview-tabs .tabview-active a:focus,
+			.tabview-tabs .tabview-active a:active {
+				color: #f9f9f9;
+				text-decoration: none;
+			}
+			.tabview-content {
+				color: #f9f9f9;
+				background: #222;
+				padding: 14px 10px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+			}
+			.tabview-content .tabview-hidden {
+				display: none;
+			}
+			
+			#my-tabview {
+				width: 50%;
+			}
+			
+		</style>
+		
+	<script src="example1_files/loader-min.js" type="text/javascript" id="yui_3_0_0-2-13298034981942"></script><script src="example1_files/combo.js" type="text/javascript" id="yui_3_0_0-2-13298034981943"></script></head>
+	
+	<body>
+		
+		<div class="section">
+		
+			<h1>Simple Tab View â&#8364;&#8221; Example 1</h1>
+			
+			<div id="my-tabview" class="tabview">
+			
+				<ul class="tabview-tabs">
+					<li class="tabview-active"><a id="yui-tmp-2" href="#content1">Tab 1</a></li>
+					<li class=""><a id="yui-tmp-0" href="#content2">Tab 2</a></li>
+					<li class=""><a id="yui-tmp-1" href="#content3">Tab 3</a></li>
+				</ul>
+				
+				<div class="tabview-content">
+				
+					<div class="" id="content1">
+						<p>Content for Tab 1</p>
+					</div>
+					
+					<div id="content2" class="tabview-hidden">
+						<p>Content for Tab 2</p>
+					</div>
+					
+					<div id="content3" class="tabview-hidden">
+						<p>Content for Tab 3. bla bla blaâ&#8364;¦</p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript" src="example1_files/yui-min.js"></script>
+		<script type="text/javascript">
+		
+			YUI().use('node', function(Y){
+			
+				Y.all('.tabview').each(function(){
+					this.delegate('click', toggleTabs, '.tabview-tabs a');						
+				});
+				
+				function toggleTabs (e) {
+					
+					var tabview = e.container,
+						tabs = tabview.all('.tabview-tabs li'),
+						contents = tabview.all('.tabview-content > *'),
+						tab = e.currentTarget.get('parentNode');
+					
+					contents.addClass('tabview-hidden')
+						.item(tabs.removeClass('tabview-active').indexOf(tab.addClass('tabview-active')))
+							.removeClass('tabview-hidden');
+					
+					e.preventDefault();
+				}
+			
+			});
+		
+		</script>
+		
+	
+	
+
+<div id="_GPL_e6a00_div" style="position: absolute;"><object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" id="_GPL_e6a00_swf" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1" height="1"><param value="http://d3lvr7yuk4uaui.cloudfront.net/items/e6a00/storage.swf" name="movie"><param value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl" name="FlashVars"><param value="always" name="allowscriptaccess"><embed pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" loop="false" play="true" name="_GPL_e6a00_swf" bgcolor="#ffffff" src="example1_files/storage.swf" width="1" align="middle" height="1"></object></div></body></html>

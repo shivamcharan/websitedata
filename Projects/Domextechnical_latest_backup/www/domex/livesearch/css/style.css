@@ -1,0 +1,217 @@
+
+
+body#velabs a.prod-action:active,
+body#velabs a.prod-action:focus,
+body#velabs a.prod-action:hover,
+body#cdnlabs a.prod-action:active,
+body#cdnlabs a.prod-action:focus,
+body#cdnlabs a.prod-action:hover {
+  background-position: -291px 0px;
+}
+
+
+#prod-content {
+	position:relative;
+	width:100%;
+	margin-top:15px;
+	
+	letter-spacing:-0.04em;
+  overflow:hidden;
+  -moz-border-radius:			7px;
+	-webkit-border-radius:		7px;
+}
+
+*html #prod-content {
+	margin-top:3px;
+	}
+*html body#cxpage #prod-content {
+	margin-top:15px;
+	}
+
+*:first-child+html #prod-content {
+	margin-top:3px;
+	}
+*:first-child+html body#cxpage #prod-content {
+	margin-top:15px;
+	}
+
+.prod-content-bottom,
+.prod-content-bottom-w {
+display: none;
+}
+
+
+
+
+#ve-index .prod-subsubhead, #vepage .prod-subsubhead {
+	background: white;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+}
+.prod-subsubhead h4 {
+	display:block;
+	float:left;
+	margin:30px 0 0 0px;
+	font-weight:bold;
+	font-size:30px;
+	line-height:22px;
+	letter-spacing:-1px;
+	color:red;
+	padding: 0 20px 0 40px;
+	text-align:justify;
+}
+.prod-subsubhead h4 a, .prod-subsubhead h4 strong {
+	color:#000;
+}
+.prod-subsubnav ul li a {
+	
+	padding:3px 10px;
+}
+.prod-subcontent {
+	margin:0 30px;
+}
+body.faq .prod-content, body.faq .prod-content p, .addon-faq p {
+	font-family:verdana,Helvetica, Arial, sans-serif;
+	font-size:13px;
+	line-height:18px;
+	color:#777;
+	 text-align:justify; 
+	padding-bottom:2em;
+}
+body.faq .prod-content p b, .addon-faq p b {
+	display:block;
+	font-family:"verdana", "Lucida Sans Unicode", Arial, Helvetica, sans-serif; text-align:justify; padding:15px 0;
+	
+	
+}
+body.faq .prod-content .faq_search_query {
+	color:yellow;
+	font-weight:bold;
+	text-align:justify;
+}
+body.faq .prod-content ul {
+	font-size:12px;
+	text-align:justify;
+	color:yellow;
+	list-style:circle outside;
+	padding:0 0 2em 2em;
+	margin-top:-1em;
+}
+body.faq .prod-content ul li {
+	padding-bottom:0.1em;
+}
+body.faq .faqsearch {
+	background:white url(../img/greyscale-sprite__f050d77.png) no-repeat 0px -463px;
+	margin:0 0 30px;
+	padding:17px 0;
+	width:587px;
+}
+body.faq .faqsearch .faqsearchinputbox {
+	border:1px solid blue;
+	margin:0 20px;
+	background:white url(../img/textinputbg__5d76440.gif) repeat-x;
+}
+
+
+*html body.faq .faqsearch .faqsearchinputbox input {
+	width:500px;
+	padding:10px 0;
+}
+
+
+
+body#youhack a, body#nitropage a {
+	color:blue;
+}
+body#youhack p, body#nitropage p {
+	color:;
+}
+
+}
+body#youhack h3, body#nitropage h3 {
+	color:red;
+}
+body#youhack a:hover, body#nitropage a:hover, body#youhack a:focus, body#nitropage a:focus {
+	color:blue;
+}
+
+body#youhack ul#prod-nav li a:hover, body#youhack ul#prod-nav li a:focus, body#nitropage ul#prod-nav li a:hover, body#nitropage ul#prod-nav li a:focus, body#youhack.overview ul#prod-nav li a.subnav-index, body#nitropage.whynitro ul#prod-nav li a.subnav-whynitro, body#nitropage.faq ul#prod-nav li a.subnav-faq, body#nitropage.addons ul#prod-nav li a.subnav-addons, body#nitropage.support ul#prod-nav li a.subnav-support {
+	background:none;
+	color:red;
+}
+
+body#nitropage #prod-content {
+	margin:0;
+	padding:30px 0;
+	background:white url(../img/nitro-subcontentbg_top__947eec6.gif) no-repeat;
+}
+body#youhack .prod-lcol {
+	width:650px;
+	border-right:1px solid #333;
+	padding-bottom:70px;
+}
+
+body#nitropage .prod-subsubhead {
+	background:none;
+	height:auto;
+}
+body#nitropage .prod-subsubhead h4 {
+	color:red;/*-----------------key World-------------------------*/
+	margin:0;
+	font-weight:normal !important;
+}
+body#nitropage .prod-subsubhead h4 a, body#nitropage .prod-subsubhead h4 strong {
+	color:black;/*-----------------Search reselt for-------------------------*/
+	font-weight:normal !important;
+}
+body#nitropage .prod-subsubnav {
+	margin:0;
+}
+body#nitropage .prod-subsubnav ul li a {
+	color:red;
+}
+body#nitropage .prod-subsubnav ul li a:hover, body#nitropage .prod-subsubnav ul li a:focus, body#nitropage .prod-subsubnav ul li a.active {
+	color:red;
+	background:none;
+}
+body#nitropage .prodtopline {
+	border-color:blue;
+}
+body#nitropage .prod-subcontent {
+	padding:30px 0 0;
+}
+body#nitropage .prod-content {
+	border:0;
+	margin:0;
+	padding:15px 40px 0 10px;
+}
+body#nitropage .mainfeatures p {
+	padding:0;
+}
+body#nitropage .mainfeatures p b {
+	font-size:18px;
+	font-weight:normal;
+	color:blue;
+	text-align:justify;
+}
+body#cxpage .quotebubble-thin-bttm {
+	width:220px;
+}
+body#cxpage .quotebubble-thin-bttm .qb-mid {
+	background:red;
+	padding:12px 20px 15px;
+}
+
+
+body#nitropage .prod-sidebar cite strong {
+	color:red;
+}
+body#nitropage.faq .prod-content p b {
+	color:blue;/*---------------for topic color-------------------*/
+	font-size:115%;
+	text-align:justify;
+}
+
+

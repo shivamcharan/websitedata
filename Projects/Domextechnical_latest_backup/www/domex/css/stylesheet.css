@@ -1,0 +1,55 @@
+#slideshow {
+ margin:0px 0px 6px;
+ padding: 4px;
+ border: 1px solid #ccc;
+ background: #ddd;
+}
+#slideshow_img {
+ border: 1px solid #888;
+ margin-right: 5px;
+}
+#slideshow_text {
+ border: 5px solid #bbc;
+ padding:5px;
+ background: #dde;
+ font-family: serif;
+ font-size: 14px;
+}
+#slideshow_controls {
+ background: #ccd;
+ color: black;
+ margin:0px 0px 6px;
+ padding: 4px;
+ border: 1px outset #ddd;
+}
+.slideshow_heading {
+ margin: 0px;
+ padding: 2px;
+ color: black;
+ font-weight: bold;
+ font-size: 14px;
+}
+#slideshow_controls input {
+ padding:1px 2px;
+ font-size: 10px;
+}
+#slideshow_controls select {
+ font-family: serif;
+ font-size: 12px;
+}
+.variable {
+ font-family: "Courier New", monospace;
+ font-size: 12px;
+}
+.method {
+ font-family: "Courier New", monospace;
+ font-size: 12px;
+}
+tt {
+ font-family: "Courier New", monospace;
+ font-size: 12px;
+}
+step {
+ font-size: 14px;
+ font-weight: bold;
+}

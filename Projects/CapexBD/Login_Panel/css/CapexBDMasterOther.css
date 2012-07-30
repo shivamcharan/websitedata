@@ -1,0 +1,198 @@
+﻿#CapexBD-main-other
+{
+    
+    width:980px;
+    margin-left:0px;
+    margin-top:-20px;
+   
+   padding-left:10px;
+    
+     
+}
+.divfull
+{
+     width:980px;
+    margin-left:0px;
+    margin-top:-50px;
+    height: 670px;
+     background-image: url('../images/capexbdcssimages/backgroundother.png'); 
+     background-repeat:no-repeat;
+     
+}
+
+#divtestimonalheaderother
+{
+    height:30px;
+        background-color: #0079b8;
+              background-image: url('../images/capexbdcssimages/backgroundother.png'); 
+                font-family:@Microsoft YaHei;
+    font-weight:normal;
+    font-size:14px;
+    color:White;
+    vertical-align: middle;
+     background-repeat: no-repeat;
+      background-position: center center;
+      vertical-align:middle;
+   
+      
+            /* Code For Round Movement  
+            -moz-border-radius: 3px 50px 50px 3px;
+            border-radius: 50px 50px 0px 0px;
+            -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+            -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+*/
+
+}
+
+.ptitle
+{
+   width:300px;
+    text-align:center;
+    padding-top:10px;
+    padding-left:10px;
+    font-size:16px;
+    font-weight:bold;
+    text-decoration:underline;
+    
+}
+.matter
+{
+    padding-left:10px;
+    padding-right:10px;
+    font-family:Verdana;
+    text-align:justify;
+    font-size:12px;
+   padding-top:10px;
+    font-style:normal;
+    line-height:17px;
+    
+    
+}
+.spanbig
+{
+    font-weight:bolder;
+    font-size:16px;
+    color:#ff9057;
+}
+
+.divtitle
+{
+    margin-top:5px;
+    vertical-align:middle;
+    font-weight:bold;
+    font-family:Verdana;
+    font-size:24px;
+    color:Yellow;
+}
+
+.divmatter
+{
+   
+    width:800px;
+    margin-top:20px;
+    height: 590px;
+   
+  
+}
+
+.divleftother
+{
+    width:400px;
+      height: 590px;
+      float:left;
+     
+}
+.divrightother
+{
+    width:400px;
+  float:right;
+ 
+    height: 590px;
+}
+
+.matterhead
+{
+       padding-left:12px;
+    padding-right:10px;
+    font-family:Verdana;
+    text-align:justify;
+    font-size:12px;
+   padding-top:10px;
+    font-style:normal;
+    font-weight:bold;
+    margin-bottom: 0px;
+     background-image: url('../images/capexbdcssimages/square.png'); 
+     background-repeat:no-repeat;
+     background-position:-2px 13px;
+     margin-bottom:-10px;
+    
+}
+.matterheadbelow
+{
+       padding-left:12px;
+    padding-right:10px;
+    font-family:Verdana;
+    text-align:justify;
+    font-size:12px;  
+    font-style:normal;    
+     background-repeat:no-repeat;
+     background-position:-2px 13px;
+    
+}
+
+
+
+.ulmatter
+{
+     padding-left:30px;
+    padding-right:10px;
+    font-family:Verdana;
+    text-align:left;
+    font-size:12px;
+   padding-top:0px;
+    font-style:normal;
+    list-style-image:url('../images/capexbdcssimages/arrow.gif');
+    margin-bottom:10px;
+    line-height:18px;
+    
+   
+}
+
+
+.ulmatter li span
+{
+    font-size:14px;
+}
+
+.ulmatter li a
+{
+    text-decoration:none;
+    color:#616264;
+    
+}
+.ulmatter li a:hover
+{
+    color:#ff9057;
+    text-decoration:none;
+    
+    
+}
+
+ 
+.olmattera
+{
+     padding-left:30px;
+    padding-right:10px;
+    font-family:Verdana;
+    text-align:justify;
+    font-size:12px;
+   padding-top:0px;
+    font-style:normal;
+   list-style:1;
+    margin-bottom:8px;
+
+    
+    
+   
+}

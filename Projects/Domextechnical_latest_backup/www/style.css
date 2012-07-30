@@ -1,0 +1,299 @@
+/* CSS Document */
+*{ vertical-align:baseline; margin:0; padding:0; border:0 none; outline:0; font-family:inherit; font-size:100%; font-weight:inherit; font-style:inherit; }
+body{ background:#fff url(../images/bg.jpg) repeat-x; font:14px Calibri; color:#333;}
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('../fonts/myriadpro-bold-webfont.eot');
+    src: url('../fonts/myriadpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-bold-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-bold-webfont.svg#MyriadProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProBoldCondensed';
+    src: url('../fonts/myriadpro-boldcond-webfont.eot');
+    src: url('../fonts/myriadpro-boldcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-boldcond-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-boldcond-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-boldcond-webfont.svg#MyriadProBoldCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProBoldCondensedItalic';
+    src: url('../fonts/myriadpro-boldcondit-webfont.eot');
+    src: url('../fonts/myriadpro-boldcondit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-boldcondit-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-boldcondit-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-boldcondit-webfont.svg#MyriadProBoldCondensedItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProBoldItalic';
+    src: url('../fonts/myriadpro-boldit-webfont.eot');
+    src: url('../fonts/myriadpro-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-boldit-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-boldit-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-boldit-webfont.svg#MyriadProBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProCondensed';
+    src: url('../fonts/myriadpro-cond-webfont.eot');
+    src: url('../fonts/myriadpro-cond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-cond-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-cond-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-cond-webfont.svg#MyriadProCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProCondensedItalic';
+    src: url('../fonts/myriadpro-condit-webfont.eot');
+    src: url('../fonts/myriadpro-condit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-condit-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-condit-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-condit-webfont.svg#MyriadProCondensedItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProItalic';
+    src: url('../fonts/myriadpro-it-webfont.eot');
+    src: url('../fonts/myriadpro-it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-it-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-it-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-it-webfont.svg#MyriadProItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/myriadpro-regular-webfont.eot');
+    src: url('../fonts/myriadpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-regular-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-regular-webfont.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('../fonts/myriadpro-semibold-webfont.eot');
+    src: url('../fonts/myriadpro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-semibold-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-semibold-webfont.svg#MyriadProSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProSemiboldItalic';
+    src: url('../fonts/myriadpro-semiboldit-webfont.eot');
+    src: url('../fonts/myriadpro-semiboldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-semiboldit-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-semiboldit-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-semiboldit-webfont.svg#MyriadProSemiboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.inner_bg{ background:#fff url(../images/inner_bg.jpg) repeat-x; font:14px Calibri; color:#333;}
+a{ text-decoration:none;}
+ul { list-style:none; }
+img{ border:none;}
+#warpper{ margin:0 auto; width:950px; }
+/*HEADER START */
+.header{ float:left; width:950px; margin:0px 0 0 0; height:96px; padding:10px 0 0 0;}
+.logo{ float:left;}
+.social{ float:right; margin:0 10px 0 0;}
+.call{background:url(../images/call.jpg) no-repeat; height:25px; padding:0 0 0 30px; margin:0; }
+.call p{ font: bold 19px/25px "Trebuchet MS"; color:#666;}
+.call p span{ font: bold 19px/25px "Trebuchet MS"; color:#ffa800;}
+.social ul{ float:right; margin:19px 0 0 0;}
+.social ul li{ float:left; padding:0 6px;}
+.social ul li.end{ padding:0;}
+/*HEADER END */
+
+/*MENUBAR START */
+.menubar{ float:left; height:40px; width:950px; /*z-index:10; position:relative;*/ margin:0; }
+.menubar ul{ float:left; }
+.menubar ul li{	font:15px/40px 'MyriadProSemibold'; float:left; color:#6e6e6e;  border-right:1px solid #EBEBEB; /*text-shadow: #C7C7C7 0 2px 1px; */}
+.menubar ul li a{ font:15px/40px 'MyriadProSemibold'; color:#6e6e6e; padding:10px 22px ; }
+.menubar ul li a:hover{ color:#fff; background:#4A9FF9; /*text-shadow: #444 0 1px 1px  ;*/ }
+.menubar ul li a.active{ font:15px/40px 'MyriadProSemibold'; color:#fff; background:#4A9FF9; }
+.level1 li{ position:relative; }
+.level2{ position:absolute; margin:0;  background:#F5F5F5; display:none; margin:0; top:100%; left:230px; width:200px; border:none; left:0; z-index:10; color:#6e6e6e;}
+.menubar .level2 li{ font:13px/40px 'MyriadProSemibold';  border:none; float:none; border-bottom:1px solid #E8E8E8; border-left:1px solid #E8E8E8; border-right:1px solid #E8E8E8; padding:0;  }
+.menubar .level2 li a{ font:13px/40px 'MyriadProSemibold';  color:#6e6e6e; display:block; padding: 0 10px;}
+.menubar .level2 li a:hover{ font:13px/40px 'MyriadProSemibold';  background:#4A9FF9; color:#fff;}
+.menubar .level2 ul li a.active{  color:#fff;}
+.menubar .show{ display:block;}
+/* MENUBAR END*/
+
+
+/* BANNER START*/
+#banner{ width:950px; float:left; margin:5px 0 0 0; height:330px; }
+
+/*ABOUT US BANNER START*/
+#banner_1{ width:950px; float:left; margin:5px 0 0 0; height:245px; background:url(../images/aboutus.jpg) no-repeat; }
+#banner_1 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:20px 0 20px 20px;}
+#banner_1 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+/*ABOUT US BANNER END*/
+
+/*Bussiness BANNER START*/
+#banner_2{ width:950px; float:left; margin:5px 0 0 0; height:245px; background: url(../images/business.jpg) no-repeat; }
+#banner_2 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:20px 0 20px 20px;}
+#banner_2 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+/*Bussiness BANNER END*/
+
+/*IT SOLUTION BANNER START*/
+#banner_3{ width:950px; float:left; margin:5px 0 0 0; height:245px; background: url(../images/solution.jpg)   no-repeat; }
+#banner_3 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:20px 0 20px 20px;}
+#banner_3 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+/*IT SOLUTION BANNER END*/
+
+/*CONTACT US BANNER START*/
+#banner_4{ width:950px; float:left; margin:5px 0 0 0; height:245px; background: url(../images/contact.jpg)   no-repeat; }
+#banner_4 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:20px 0 20px 20px;}
+#banner_4 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+/*CONTACT US BANNER END*/
+
+
+
+/* BANNER END*/
+
+/* BOX START*/
+#box{ float:left; height:120px;}
+.box{ margin:5px 0 0 0; padding:10px 0 0 32px; overflow:hidden; width:119px; float:left;}
+.box_white{ float:left; padding:6px; background:#fff; height:69px; width:107px; margin:0 0 5px 0;}
+.box p{ text-align:center;}
+.box p a{ font:11px Verdana, Arial, Helvetica, sans-serif; color:#134d90; }
+/* BOX END*/
+
+/* HOME CONTAINER START*/
+#container{ margin:18px 0 0 0; overflow:hidden; float:left;}
+.content{}
+.container_left{ float:left; width:670px; margin:0 18px 5px 0; border-bottom:1px dotted #8b8989; padding:0 0 15px 0;}
+.container_left h1{ font:19px "Trebuchet MS"; color:#134d90;}
+.container_left h1 span{ font:19px "Trebuchet MS"; color:#ffa800;}
+.container_left p{ font:13px/18px "Trebuchet MS"; color:#333; text-align:justify; padding:5px 0;}
+.container_right{ float:right;}
+.right_box{}
+.round_top{ background:url(../images/round_top.jpg) no-repeat 0 top; height:46px; width:236px; padding:7px 0 0 20px;}
+.round_top h1{ background:url(../images/mes_icon.jpg) no-repeat; font:19px "Trebuchet MS"; color:#fff; padding:0 0 0 30px;}
+.round_center{ background:url(../images/round_center.jpg) repeat-y; padding:0 23px 0 15px; width:218px; float:left;}
+.round_center ul{ float:left;}
+.round_center ul li{ font:11px Arial, Helvetica, sans-serif; color:#333; padding:0 0 10px 20px; margin:0 0 5px 0; background:url(../images/list.jpg) no-repeat 0 3px; border-bottom:1px dotted #ccc;}
+.round_bottom{ background:url(../images/round_bottam.jpg) no-repeat 0 bottom; height:17px; width:256px; clear:both;}
+.link a{ font:11px Arial, Helvetica, sans-serif; text-decoration:underline; color:#fea801; float:right;}
+/* HOME CONTAINER END*/
+
+.bot{ border-bottom:1px dotted #8b8989; margin:0 0 5px 0;}
+
+/*-CENTER START -*/
+.center{ float:left;}
+.cen_box{ background:url(../images/box_bg.jpg) no-repeat; width:201px; margin:0 0 0 44px; float:left; padding:25px 27px 27px 27px; height:222px}
+.cen_box h1{ font: bold 15px "Trebuchet MS"; color:#ffba00;}
+.cen_box p{ font:13px/20px "Trebuchet MS"; text-align:justify; color:#999; padding:15px 0 0 0;}
+.cen_box a{  color:#0177ff; font: italic 12px Arial, Helvetica, sans-serif; float:right; padding:8px 0 0 0;}
+.org_box{ background:#FFF3DC; border:1px solid #FEDB9A; float:left; margin:10px 0 10px 0; width:950px; padding:10px;}
+.org_box p{ font:13px/20px "Trebuchet MS"; color:#333; padding:5px 0 0 0;}
+.org_box h1{ font:bold 15px "Trebuchet MS"; color:#000;}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+#footer{ background:url(../images/footer_bg.jpg) repeat-x; height:62px; float:left; width:100%; }
+.footer{ margin:0 auto; width:950px;}
+.foo_left{ float:left;}
+.foo_left ul{ float:left; margin:5px 0 0 0;}
+.foo_left ul li{ float:left; font:12px/35px Arial, Helvetica, sans-serif; color:#fff;}
+.foo_left ul li a{ color:#fff; padding:0 10px 0 10px; border-right:1px solid #fff;}
+.foo_right{ float:right; margin:5px 0 0 0;}
+.foo_right p{ font:12px/35px Arial, Helvetica, sans-serif; color:#fff;}
+.foo_right a{ font:12px Arial, Helvetica, sans-serif; color:#fff;}
+.foo_right a:hover{ text-decoration:underline; color:Silver;}
+.foo_left ul li a.rig{ border-right:none;}
+.foo_left ul li a:hover{color:Silver;}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+#inner_container{ width:950px; float:left; margin:18px 0 10px 0; overflow:hidden; }
+.innercontent{ width:950px;}
+.innet_top{ background:url(../images/inner_top.jpg) no-repeat 0 top; width:950px; height:25px;}
+.inner_center{ background:url(../images/inner_center.jpg) repeat-y; width:900px; padding:0 25px; overflow:hidden;}
+.inner_center h1{ font: bold 18px "Trebuchet MS"; color:#ffba00;}
+.inner_center h2{ font: bold 15px "Trebuchet MS"; color:#444;}
+.inner_center p{ font:13px/20px "Trebuchet MS"; color:#333; padding:5px 0 13px 0; text-align:justify;}
+.inner_bottom{ background:url(../images/inner_bottom.jpg) no-repeat 0 bottom; width:950px; height:31px;}
+.inner_center1 ul{ margin:5px 0; }
+.inner_center1 ul li{ font:13px "Trebuchet MS"; padding:5px 0 5px 20px; background:url(../images/arrow.png) no-repeat 0 10px; text-align:justify;}
+.inner_center h3{ font: bold 14px "Trebuchet MS"; color:#24267D; width:120px; text-align:center;}
+.inner_center h4{ font:12px "Trebuchet MS"; color:#444; width:120px; text-align:center; }
+
+table.nav  { border-collapse: collapse; border-color: #CCCCCC; }
+.nav td { border-right:1px solid #ccc; font: bold 14px/30px "Trebuchet MS"; padding: 0; text-align: center; width:25%; border-bottom:none;}
+.nav td a.current { background: #018ED4; color: #FFFFFF; }
+.nav td a { background: #EEEEEE; color: #444444; display: block; font: bold 15px/35px "Trebuchet MS";}
+#example-one { margin: 10px 0 0 0; overflow: hidden; padding: 0;}
+table{ text-align:center; border:1px solid #8cbdf6; margin:10px 0; font:13px "Trebuchet MS"; background:#C6E0FE;}
+td{ border-right:1px solid #8cbdf6; border-bottom:1px solid #8cbdf6; line-height:30px;}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.form_content {  float:left; margin:5px 0;}
+form{ margin:15px 0 0 0; float:left;}
+.input_box { width:600px; background-color:#CCCCCC;}
+input { background:#f6f6f6; border:1px solid #eeeeee; width:260px; font:12px "Trebuchet MS"; color:#333; padding:2px; }
+textarea { background:#f6f6f6; border:1px solid #eeeeee; width:260px; font:12px "Trebuchet MS"; color:#333; padding:2px;}
+label{ width:120px; font:13px "Trebuchet MS"; float:left;}
+.left_cont{ float:left;   width:400px}
+.right_cont{ float:left; margin:0 0 0 25px;}
+.submit  { background: #00A9FC; border: 1px solid #D9F1FE; color: #FFFFFF; cursor: pointer; float: left; font: bold 15px Tahoma,Geneva,sans-serif; height: 30px; margin: 10px 0 0 120px; padding: 0; width: 80px; }
+.link { font: 14px "Trebuchet MS"; color:#FF3333; text-decoration:underline;}
+.con{ float:left; margin:15px 0 0 0;}
+.con ul{ list-style:none; float:left;}
+.con ul li{ font:14px/24px "Trebuchet MS"; color:#444;}
+.img_left{ float:left; padding:5px 10px 0 0;}
+.manage{ margin:0 0 20px 0; float:left; border-bottom:1px dotted #ccc; padding:0 0 5px 0;}
+.valid{ width:10px; height:8px;  font-weight:bold;margin-top:2px; color:red;}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.bus_int{ float:left;}
+.bus_int ul{ float:left; list-style:none;}
+.bus_int ul li{ font:13px/20px "Trebuchet MS"; color:#444; padding:5px 0 5px 0;}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+.side{ float:left; width:590px; }
+.side_text{ float:left; margin:50px 0 0 10px; width:500px; }
+.side_text h1{ font: 30px 'MyriadProSemibold'; color:#fff;  }
+.side_text p{ font: 18px "Trebuchet MS"; color:#fff; padding:20px 0 0 0; text-align:justify; }
+.side img{ float:left; padding:20px 40px; }

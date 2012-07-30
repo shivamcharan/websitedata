@@ -1,0 +1,5 @@
+main color 0079b8
+
+light black: #616264
+
+light orange: #ff9057

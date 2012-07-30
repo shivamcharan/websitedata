@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="alexaVerifyID" content="9SKe_ysZlm5C10I5_G1vOTpQyzU" />
+
+<title>Domex :: Contact us</title>
+
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+<link rel="stylesheet" href="../css/facebox.css" type="text/css" />
+
+<script type="text/javascript" src="../js/jquery-1.2.1.min.js"></script>
+
+<script src="../js/jq.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="../js/facebox.js"></script>
+
+<script type="text/javascript" src="../js/organictabs.jquery.js" ></script>
+<script language="javascript" type="text/javascript" src="..js/validation.js" />
+
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript">
+
+jQuery(document).ready(function($) {
+
+      $('a[rel*=facebox]').facebox({
+
+        loadingImage : '../src/loading.gif',
+
+        closeImage   : '../src/closelabel.png'
+
+      })
+
+    })
+
+	$(function() {
+
+    
+
+            $("#example-one").organicTabs();
+
+            
+
+            $("#example-two").organicTabs({
+
+                "speed": 200
+
+            });
+
+        });
+
+$(document).ready(function() {
+
+	$('ul.level1 li').hover(function ()
+
+		{
+
+			$(this).find('ul.level2').addClass('show')
+
+		},
+
+		function () {
+
+    	$(this).find('ul.level2').removeClass("show");
+
+	  });
+
+		});
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27230814-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script language="javascript" type="text/javascript">
+
+function fncInputNumericValuesOnly() {
+
+        if (!(event.keyCode >= 48 && event.keyCode <= 57)) {
+
+            event.returnValue = false;
+
+        }
+    }
+	
+function Validation()
+{
+//alert('hai');
+
+	var first_name=document.getElementById("first_name").value;
+	
+	if(first_name=="")
+	{
+		alert("First Name Should Not be Empty");
+		
+		document.getElementById("first_name").focus();
+		
+		return false;
+	}
+	else 
+	{
+		var First=first_name.match(/^[a-z .'-]+$/);
+		
+		if(First==null)
+           
+            {
+				alert("The First Name you entered does not appear to be valid.");
+				
+				document.getElementById("first_name").value="";
+                 
+                document.getElementById("first_name").focus();
+				
+				return false;
+			}
+			
+	}
+	
+	var Telephone=document.getElementById("telephone").value;
+	
+	if(Telephone=="")
+	{
+		alert("Telephone Number Should Not be Empty");
+		
+		document.getElementById("telephone").focus();
+		
+		return false;
+	}
+	else 
+	{
+		var T=Telephone.match(/^[0-9 .-]+$/);
+		
+		if(T==null)
+           
+            {
+				alert("The Telphone Number you entered does not appear to be valid.");
+				
+				document.getElementById("telephone").value="";
+                 
+                document.getElementById("telephone").focus();
+				
+				return false;
+			}
+			
+	}
+	
+	var Email=document.getElementById("email").value;
+	
+	if(Email=="")
+	{
+		alert("Email Address Should Not be Empty");
+		
+		document.getElementById("email").focus();
+		
+		return false;
+	}
+	
+	else 
+	{
+		var E=Email.match(/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/);
+		
+		if(E==null)
+           
+            {
+				alert("The Email Address you entered does not appear to be valid.");
+				
+				document.getElementById("email").value="";
+                 
+                document.getElementById("email").focus();
+				
+				return false;
+			}
+			
+	}
+	
+	var Address=document.getElementById("Address").value;
+		
+	if(Address=="")
+	{
+		alert("Address Should Not be Empty ");
+		
+		 document.getElementById("Address").focus();
+		 
+		return false;
+	}
+		
+	var Comments=document.getElementById("comments").value;
+		
+	if(Comments=="")
+	{
+		alert("Comments Should Not be Empty ");
+		
+		 document.getElementById("comments").focus();
+		 
+		return false;
+	}
+	
+	
+}
+</script>
+
+</head>
+
+<body class="inner_bg">
+
+	<!---WARAPPER START --->
+
+	<div id="warpper">
+
+	<!---HEADER START --->
+
+		<div class="header">
+
+			<div class="logo">
+
+				<a href="index.html"><img src="../images/logo.jpg" alt="" /></a>
+
+			</div>
+
+			<div class="social">
+
+				<div class="call">
+
+					<p>Call Us: <span>+91 - 22- 66638220</span></p>
+
+				</div>
+
+				<ul>
+
+					<li><a href="#"><img src="../images/blog.jpg" alt="" /></a></li>
+
+					<li><a href="#"><img src="../images/twitter.jpg" alt="" /></a></li>
+
+					<li class="end"><a href="#"><img src="../images/face_book.jpg" alt="" /></a></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+		<!---HEADER END --->
+
+		
+
+		<!---MENUBAR START --->
+		<div class="menubar">
+			<ul class="level1">
+				<li ><a href="../index.html" style="background:none; height:24px"><img src="../images/home.jpg" alt="Home"width="40" height="30" border="0" title="Home" /></a></li>
+				<li><a href="about us.html">About Us</a>
+					<ul class="level2">
+						<li><a href="overview.html">Overview</a></li>
+						<li><a href="history.html">History</a></li>
+						<li><a href="management.html">Management</a></li>					
+           		  </ul>
+			  </li>
+				<li><a href="../market_research_companies/software solutions.html"> Software Solutions</a>
+                
+                <ul class="level2">
+						<li><a href="../market_research_companies/logistics.html">Logistics</a></li>
+						<li><a href="../market_research_companies/project-tracking-software-capexbd.html">CapexBD </a></li>
+						<li><a href="../market_research_companies/hrms.html">H R M S</a></li>
+						<li><a href="../market_research_companies/customized solutions.html">Customized Solutions</a></li>
+				  </ul>
+                
+                
+              </li>
+				<li><a href="../market_research_companies/Business Intelligence.html">Market Research </a>
+					<ul class="level2">
+						<li><a href="../market_research_companies/india new project.html">India New Projects</a></li>
+						
+					</ul>
+			  </li>
+				
+				<li><a href="market_research_companies/business transcription.html">Trade Shows</a>
+				<ul class="level2">
+						<li><a href="trade_shows/trade fair consultancy.html">Trade Fair Consultancy </a></li>
+						<li><a href="trade_shows/Visit Our Exhibition Stalls.html">Domex at various Trade Fairs</a></li>
+</ul>
+				
+				
+				</li>
+				
+				<li><a href="market_research_companies/business transcription.html">Other Research Service</a>
+				<ul class="level2">
+				<li><a href="market_research_companies/business transcription.html">KPO / BPO Services </a></li>
+				
+
+				</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+				
+			</ul>
+				
+			</ul>
+		
+             
+          
+
+		</div>
+          <div style="position:relative; top:-85px; left:650px;" class="fb-like" data-href="http://www.facebook.com/pages/Domex-Technical-Information-Pvt-Ltd/277671458944673" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true"></div>		
+			   
+           
+   
+		<!---MENUBAR END --->
+
+		
+
+		<!---BANNER START --->
+
+		<div id="banner_4">
+			<h1>Contact Us</h1>
+			<p>Domex provides authentic information for your strategy planning</p>
+		</div>
+
+		<!---BANNER END --->
+
+		
+
+		<!-- INNER CONTAINER START--->
+
+		<div id="inner_container">
+
+			<div class="innercontent">
+				<div class="innet_top"></div>
+				<div class="inner_center">
+					<div class="left_cont">
+					<h1>Enquiry</h1>
+					 <form name="mail"  method="post" action="mail.php">
+						<fieldset>
+							<div class="form_content">
+
+								<label>Name<font color="red" width="bold">*</font></label>
+								<input  type="text" name="name" id="name"  value=""/>
+							</div>
+                            
+							<div class="form_content">
+								<label>Phone<font color="red" width="bold">*</font></label>
+								<input  type="text" name="phone" id="phone"  value=""/>
+							</div> 
+                           
+							<div class="form_content">
+
+								<label>E-mail<font color="red" width="bold">*</font></label>
+								<input  type="text" name="email" id="email" value=""/>
+							</div> 
+                           
+							<div class="form_content">
+								<label>Address<font color="red" width="bold">*</font></label>
+								<input  type="text" name="address" id="address" value=""/>
+							</div> 
+                         
+							<div class="form_content">
+
+								<label>Comment<font color="red" width="bold">*</font></label>
+								<textarea rows="5" cols="15" name="comment" id="comment"></textarea>
+							</div>
+                           
+							<div class="form_content">
+								<label></label>
+								<input type="submit"  value="Submit" class="submit" onclick="return validate2()"/>
+							</div>
+
+						</fieldset>
+					</form>
+					</div>
+					<div class="right_cont">
+						<h1>Contact Us</h1>
+						<div class="con">
+							<ul>
+								<li>RF3 Kakad Chambers Annexe, </li>
+
+								<li>First Floor, Dr Annie Besant Road,</li>
+								<li>Adjacent Poddar Hospital, Worli, </li>
+								<li>Mumbai - 400 018, INDIA </li>
+								<li>Tel : +91-22-66638220 / 21/ 22</li>
+
+                              <li>  Email: sujala@domexinfo.in</li>
+
+                              <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;anuradha@domexinfo.in</li>
+							</ul>
+						</div>
+					</div>
+					<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=domex+technical+information+mumbai&amp;aq=&amp;sll=22.105999,81.914063&amp;sspn=51.69793,79.013672&amp;vpsrc=6&amp;ie=UTF8&amp;hq=domex+technical+information&amp;hnear=Mumbai,+Maharashtra&amp;t=m&amp;ll=19.003231,72.817254&amp;spn=0.847667,1.234589&amp;z=10&amp;iwloc=A&amp;cid=6539280679496783989&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=domex+technical+information+mumbai&amp;aq=&amp;sll=22.105999,81.914063&amp;sspn=51.69793,79.013672&amp;vpsrc=6&amp;ie=UTF8&amp;hq=domex+technical+information&amp;hnear=Mumbai,+Maharashtra&amp;t=m&amp;ll=19.003231,72.817254&amp;spn=0.847667,1.234589&amp;z=10&amp;iwloc=A&amp;cid=6539280679496783989" style="color:#0000FF;text-align:left">View Larger Map</a></small><br /><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=domex+technical+information+mumbai&amp;aq=&amp;sll=21.125498,81.914063&amp;sspn=53.791011,79.013672&amp;vpsrc=0&amp;ie=UTF8&amp;hq=domex+technical+information&amp;hnear=Mumbai,+Maharashtra&amp;t=m&amp;z=13&amp;iwloc=A&amp;cid=6539280679496783989&amp;ll=19.003231,72.817254" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+				</div>
+
+				<div class="inner_bottom"></div>
+			</div>
+		</div>
+		<!-- INNER CONTAINER END--->
+
+	</div>
+
+	<!---WARAPPER END --->
+
+	<!--- FOOTER START --->
+		<div id="footer">
+			
+<br/>
+ <p align="center">
+   <a href="../index.html"title="Home">Home |
+   <a href="about us.html"title="About us">About us |
+   <a href="../market_research_companies/software solutions.html"title="Software Solutions">Software Solutions |</a>
+   <a href="../market_research_companies/Business Intelligence.html"title="Market Research">Market Research |</a>
+   <a href="../trade_shows/sitemap.html"title="Site map">Site Map |</a>
+   <a href="../business_research_companies/contact.html"title="Contact us">Contact us </a>  </p>
+
+<p align="center">Copyright &copy; 2011 Domex Technical Information Pvt. Ltd.All Rights Reserved.
+  <a href="privatepolicy.html"title="For Private Policy & Disclaimer">For Private Policy & Disclaimer  </a>  </p>
+  </p>
+
+
+		</div>
+	<!--- FOOTER END --->
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,229 @@
+* 		{ padding:0; margin:0; }
+html 	{ height:100%; padding-bottom:0.1em; }
+body 	{ background:#fff;padding-bottom:1em; }
+a 		{ text-decoration:none; color:#0a1c0a; outline:none; background-color:inherit; }
+a:hover { text-decoration:none; color:#000; }
+img, fieldset { border:0; }
+ul 		{ list-style:none; }
+p 		{ line-height:1.5em; color:#000; margin-bottom:0.8em; }
+td 		{ text-align:left; vertical-align:top; }
+li, td, p	{ font-size:1.2em; }
+li li, li p, td p { font-size:1em; }
+#midColumn p{ text-align:justify; }
+ol { margin-left:25px; }
+ol li { margin-bottom:.6em; }
+
+.spacer	{ clear:both;}
+
+/* heading tags */
+h2 {margin-bottom: 15px;border-bottom: 1px solid #A7AAB3;}
+
+h3 {margin-top: 15px;margin-bottom: 15px;border-bottom: 1px solid #A7AAB3;}
+
+
+/* wrappers and columns */
+.outer_wrapper	{ width:960px; margin:0 auto; background:#fff; border-top:#fff 1px solid;}
+#container		{ height:100%; padding:8px 0 15px; overflow:hidden; clear:left; font-size: 1.2em; }
+#leftColumn 	{ width:180px; float:left;font-size:80%;font-family:verdana,helvetica,arial,sans-serif; color:#333; text-align:justify;}
+#rightColumn 	{ width:170px; float:right; }
+#midColumn		{ margin:0 190px; }
+#midColumn .contentArea{ padding:20px 2% 10px; width:96%; background:#fdfcf8;}
+* html #midColumn .contentArea{ padding:20px 2% 10px; width:94%; }
+p.read_more a	{ color:#0a14a0; text-decoration:underline; background:url(../images/blue-arrow.png) no-repeat 100% 60%; padding-right:8px;}
+p.read_more a:hover{ text-decoration:none;}
+
+/* topmost black stripe */
+.topStripe { background-color:white; height:100%; overflow:hidden; height:2.6em; }
+
+/* header */
+#header {padding:0.4em .6em; height: 379px;; overflow:hidden;  background-image: url(../images/header_bg.jpg); }
+
+
+/* top Nav */
+.topNav{ margin-top:10px;}
+
+
+/* Special Links added on 27 Jan 10 */
+#leftColumn .spLinks { }
+
+
+/* general css for all block */
+.ac{ text-align:center;}
+#midColumn .grblod{ color:#1D7900; padding-bottom:.3em;}
+
+
+
+
+
+
+
+
+#banner { margin-top:5px; overflow:hidden;background:url(../images/banner.jpg);height:225px;width:950px; }
+
+#banner h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+#banner_1 { margin-top:15px; overflow:hidden;background:url(../images/home_banner4.jpg);height:240px;width:950px; }
+
+#banner_1 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_1 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+#banner_2 { margin-top:15px; overflow:hidden;background:url(../images/aboutus.jpg);height:240px;width:950px; }
+
+#banner_2 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_2 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+#banner_3 { margin-top:15px; overflow:hidden;background:url(../images/solution.jpg);height:240px;width:950px; }
+
+#banner_3 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_3 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+
+#banner_4 { margin-top:15px; overflow:hidden;background:url(../images/business.jpg);height:240px;width:950px; }
+
+#banner_4 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_4 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+
+#banner_5 { margin-top:15px; overflow:hidden;background:url(../images/business.jpg);height:240px;width:950px; }
+
+#banner_5 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_5 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+
+#banner_6 { margin-top:15px; overflow:hidden;background:url(../images/contact.jpg);height:240px;width:950px; }
+
+#banner_6 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_6 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+/*#midColumn li{ background:url(../images/bull.png) no-repeat 0 6px; font-size:1.2em; padding:0 5px .5em 8px;}*/
+#midColumn li a{ color:#000; text-decoration:none;}
+#midColumn li a:hover{ text-decoration:underline;}
+
+
+
+ 
+
+/* News And Events */
+.ad{ height:270px;width: 190px;padding-top: 15px;padding-right: 7px;}
+
+.services{ height:270px;width: 190px;padding-top: 0;padding-left: 7px;background:url(../images/bg3.png);font-size:80%;font-family:verdana,helvetica,arial,sans-serif; color:#333; text-align:justify; padding:5px 0;}
+
+/* Services */
+
+
+
+
+
+
+.moduleWrap { height:100%; overflow:hidden;padding-left:20px;font-size:10px; }
+.moduleWrap h3 { margin-bottom:0.4em; position:relative; background-color:#365336; color:#ffffff; padding:3px 3px 3px 6px; border-bottom:solid 1px #fff; }
+.recentUpdates h3 a { position:absolute; right:4px; top:2px; }
+.recentUpdates, .mod-download  { width:47.5%; border:solid 1px #d2e2d2; background-color:#f4fbf4; }
+.recentUpdates { float:left; }
+.mod-download { float:right; }
+.recentUpdates strong { font-weight:normal; }
+.moduleWrap ul { height:100px; position:relative; overflow:hidden; padding:4px; overflow:hidden; }
+.moduleWrap .mod-download li { margin-bottom:0.4em; background:url(../images/bullet.png) no-repeat 0 5px; padding-left:8px; }
+.moduleWrap li.odd { background-color:#e5f0e5; }
+#midColumn .moduleWrap p { padding-left:8px; margin-bottom:0.6em; }
+
+/* Footer Site review */ 
+.siteReview { background:#292929; text-align:center; color:#fff; font-weight:bold; font-size:1.1em; padding:.6em 0; margin-bottom:1.0em;  }
+
+/* FOOTER */
+#footer {background:url(../images/footer_bg.jpg) repeat-x; height:80px; float:left; width:100%; }
+
+#footer p{ color:#FFFFFF;font-size:14px;font-size: 125%;
+	font-family:verdana,helvetica,arial,sans-serif;}
+
+#footer a{ color:#FFFFFF;}
+
+#footer a:hover{ text-decoration:none; color:Silver;}a{ text-decoration:none;}p{  margin-top: 8px;margin-bottom: 8px;}
+
+
+/*HEADER START */
+
+.header-logo{ float:left; width:950px; margin:0px 0 0 0; height:96px; padding:10px 0 0 0;}
+
+.logo{ float:left;}
+
+.social{ float:right; margin:0 10px 0 0;}
+
+.call{background:url(../images/call.jpg) no-repeat; height:25px; padding:0 0 0 30px; margin:0; }
+
+.call p{ font: bold 19px/25px "Trebuchet MS"; color:#666;}
+
+.call p span{ font: bold 19px/25px "Trebuchet MS"; color:#ffa800;}
+
+.social ul{ float:right; margin:10px 35px 0 0;}
+
+.social ul li{ float:left; padding:0 6px;}
+
+.social ul li.end{ padding:0;}
+
+/*HEADER END */
+
+
+
+
+#image-discription {height:250px;border:2px dotted #FF99FF;font-size:100%;font-family:verdana,helvetica,arial,sans-serif; color:#333; text-align:justify; padding:5px 0; }
+#container-3{height:220px;font-size:80%;font-family:verdana,helvetica,arial,sans-serif; color:#333; text-align:justify; padding:5px 0;}
+
+
+#marquee{padding-top:105px;color:blue;font:14px/19px "Trebuchet MS"; color:#333; text-align:justify; padding:5px 0;}
+#banner{padding-top:22px;}
+
+
+#content {margin-right: 250px;margin-left: 210px;padding: 5px;height:350px;color:#333; text-align:justify; padding:5px 0;}
+
+#navlist{
+	padding-left: 0;
+	margin-left: 0;
+	border-bottom: 1px solid #C2C2CA;
+	width: 160px;
+}
+
+#navlist li
+{
+list-style: none;
+margin: 0;
+padding: 0.25em;
+border-top: 1px solid #C2C2CA;
+}
+
+#navlist li a {
+	text-decoration: none;
+
+}
+.style2 { font-size:110%;font-family:verdana,helvetica,arial,sans-serif; color:#333; text-align:justify; padding:5px 0;}
+
+.form_content {  float:left; margin:5px 0;}
+
+form{ margin:15px 0 0 0; float:left;}
+
+.input_box { width:600px; background-color:#CCCCCC;}
+
+input { background:#f6f6f6; border:1px solid #1E90FF; width:260px; font:12px "Trebuchet MS"; color:#333; padding:2px; }
+
+textarea { background:#f6f6f6; border:1px solid #1E90FF; width:260px; font:12px "Trebuchet MS"; color:#333; padding:2px;}
+
+label{ width:120px; font:13px "Trebuchet MS"; float:left;}
+
+.left_cont{ float:left;   width:400px}
+
+.right_cont{ float:left; margin:0 0 0 25px;}
+
+.submit  { background: #00A9FC; border: 1px solid #D9F1FE; color: #FFFFFF; cursor: pointer; float: left; font: bold 15px Tahoma,Geneva,sans-serif; height: 30px; margin: 10px 0 0 120px; padding: 0; width: 80px; }
+
+/*ABOUT US BANNER START*/
+
+
+/*ABOUT US BANNER END*/

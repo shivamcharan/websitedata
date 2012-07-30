@@ -1,0 +1,277 @@
+* 		{ padding:0; margin:0; }
+html 	{ height:100%; padding-bottom:0.1em; }
+body 	{ background:#fff;padding-bottom:1em; }
+a 		{ text-decoration:none; color:#0a1c0a; outline:none; background-color:inherit; }
+a:hover { text-decoration:none; color:#000; }
+img, fieldset { border:0; }
+ul 		{ list-style:none; }
+p 		{ line-height:1.5em; color:#000; margin-bottom:0.8em; }
+td 		{ text-align:left; vertical-align:top; }
+li, td, p	{ font-size:1.2em; }
+li li, li p, td p { font-size:1em; }
+#midColumn p{ text-align:justify; }
+ol { margin-left:25px; }
+ol li { margin-bottom:.6em; }
+
+.spacer	{ clear:both;}
+
+/* heading tags start */
+h2 {margin-bottom: 15px;border-bottom: 1px solid #A7AAB3;}
+
+h3 {margin-top: 15px;margin-bottom: 15px;border-bottom: 1px solid #A7AAB3;}
+
+.style2 { font-size:110%;font-family:verdana,helvetica,arial,sans-serif; color:#333; text-align:justify; padding:5px 0;}
+
+/* heading tags end*/
+
+
+/* wrappers and columns Start */
+.outer_wrapper{ width:1000px; margin:0 auto; background:#fff; border-top:#fff 1px solid;}
+
+#container{ height:100%; padding:8px 0 15px; overflow:hidden; clear:left; font-size: 1.2em; }
+
+#leftColumn{ width:180px; float:left;padding:0 0 0 10px;font-size:80%;font-family:verdana,helvetica,arial,sans-serif; color:#333; text-align:justify;}
+
+#rightColumn{ width:200px; float:right; }
+
+
+#midColumn{ margin:0 220px; }
+
+#midColumn .contentArea{ padding:20px 2% 10px; width:96%; background:#fdfcf8;}
+
+* html #midColumn .contentArea{ padding:20px 2% 10px; width:94%; }
+/* wrappers and columns end */
+
+/* topmost black stripe start */
+.topStripe { background-color:white; height:100%; overflow:hidden; height:2.6em; }
+/* topmost black stripe end */
+
+/* header start */
+#header {padding:0.4em .6em; height: 379px;; overflow:hidden;  background-image: url(../images/header_bg.jpg); }
+/* header end */
+
+/* top Nav start*/
+.topNav{ margin-top:10px;}
+/* top Nav start*/
+
+/* Left Column start */
+#leftColumn .spLinks { }
+/* Left Column end */
+
+
+/* general css for all block start*/
+.ac{ text-align:center;}
+#midColumn .grblod{ color:#1D7900; padding-bottom:.3em;}
+/* general css for all block end*/
+
+/*Header bnner start*/
+#banner { margin-top:5px; overflow:hidden;background:url(../images/banner.jpg);height:225px;width:950px; }
+
+#banner h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+#banner_1 { margin-top:15px; overflow:hidden;background:url(../images/home_banner4.jpg);height:240px;width:950px; }
+
+#banner_1 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_1 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+#banner_2 { margin-top:15px; overflow:hidden;background:url(../images/aboutus.jpg);height:240px;width:950px; }
+
+#banner_2 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_2 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+#banner_3 { margin-top:15px; overflow:hidden;background:url(../images/solution.jpg);height:240px;width:999px; }
+
+#banner_3 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_3 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+
+#banner_4 { margin-top:15px; overflow:hidden;background:url(../images/business.jpg);height:240px;width:950px; }
+
+#banner_4 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_4 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+
+#banner_5 { margin-top:15px; overflow:hidden;background:url(../images/business.jpg);height:240px;width:950px; }
+
+#banner_5 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_5 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+
+#banner_6 { margin-top:15px; overflow:hidden;background:url(../images/contact.jpg);height:240px;width:950px; }
+
+#banner_6 h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banner_6 p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+
+#banners { margin-top:5px; overflow:hidden;background:url(../images/contact.jpg);height:240px;width:950px; }
+
+#banners h1{ font:24px/20px 'MyriadProSemibold'; color:#fff; margin:2px 0 20px 20px;}
+
+#banners p{ font: bold 16px "Trebuchet MS"; color:#fff; margin:0 0 0 20px;}
+
+
+/* Header banner end*/
+
+/*Mid Column Start*/
+#midColumn li a{ color:#000; text-decoration:none;}
+#midColumn li a:hover{ text-decoration:underline;}
+
+/*Mid Column end*/
+
+
+
+ 
+
+/* Video Panel Start*/
+.ad{ height:270px;width: 190px;padding-top: 15px;padding-right: 7px;}
+
+.services{ height:270px;width: 190px;padding-top: 0;padding-left: 7px;background:url(../images/bg3.png);font-size:80%;font-family:verdana,helvetica,arial,sans-serif; color:#333; text-align:justify; padding:5px 0;}
+
+/* Video Panel end */
+
+/*HEADER START */
+
+.header-logo{ float:left; width:950px; margin:0px 0 0 0; height:50px; padding:10px 0 0 0;}
+
+.logo{ float:left;}
+
+.social{ float:right; margin:0 10px 0 0;}
+
+.call{background:url(../images/call.jpg) no-repeat; height:25px; padding:0 0 0 30px; margin:0; }
+
+.call p{ font: bold 19px/25px "Trebuchet MS"; color:#666;}
+
+.call p span{ font: bold 19px/25px "Trebuchet MS"; color:#ffa800;}
+
+.social ul{ float:right; margin:10px 35px 0 0;}
+
+.social ul li{ float:left; padding:0 6px;}
+
+.social ul li.end{ padding:0;}
+
+/*HEADER END */
+
+/*----------------Our Project panel start----------- */
+#image-discription {height:250px;font-size:100%;font-family:verdana,helvetica,arial,sans-serif; color:#333; text-align:justify; padding:5px 0; }
+/*----------------Our Project panel start----------- */
+
+/*----------------Container-3 part start----------- */
+#container-3{height:220px;font-size:80%;font-family:verdana,helvetica,arial,sans-serif;color:#333;text-align:justify;padding:5px 0;}
+
+
+#marquee{color:blue;font:14px/19px "Trebuchet MS"; color:#333; text-align:justify; padding:122px 10px 0 0;}
+
+#banner{padding:82px;}
+
+#content {margin-right: 250px;margin-left: 210px;padding: 5px;height:350px;color:#333; text-align:justify; padding:5px 0;}
+
+#navlist{padding-left: 0;margin-left: 0;border-bottom: 1px solid #C2C2CA;width: 160px;}
+
+#navlist li {list-style: none;margin: 0;padding: 0.25em;border-top: 1px solid #C2C2CA;}
+
+#navlist li a {text-decoration: none;}
+
+
+
+/*-----------------------contact us form Start------------------- 
+.form_content {  float:left; margin:5px 0;}
+
+form{ margin:15px 0 0 0; float:left;}
+
+.input_box { width:600px; background-color:#CCCCCC;}
+
+input { background:#f6f6f6; border:1px solid #1E90FF; width:260px; font:12px "Trebuchet MS"; color:#333; padding:2px; }
+
+textarea { background:#f6f6f6; border:1px solid #1E90FF; width:260px; font:12px "Trebuchet MS"; color:#333; padding:2px;}
+
+label{ width:120px; font:13px "Trebuchet MS"; float:left;}
+
+.left_cont{ float:left;   width:400px}
+
+.right_cont{ float:left; margin:0 0 0 25px;}
+
+.submit  { background: #00A9FC; border: 1px solid #D9F1FE; color: #FFFFFF; cursor: pointer; float: left; font: bold 15px Tahoma,Geneva,sans-serif; height: 30px; margin: 10px 0 0 120px; padding: 0; width: 80px; }
+
+/*-----------------------contact us form End------------------- */
+
+
+/* Footer start*/
+#footer {background:url(../images/footer_bg.jpg) repeat-x; height:80px; float:left; width:100%; }
+
+#footer p{ color:#FFFFFF;font-size:14px;font-size: 125%;font-family:verdana,helvetica,arial,sans-serif;}
+
+#footer a{ color:#FFFFFF;}
+
+#footer a:hover{ text-decoration:none; color:Silver;}a{ text-decoration:none;}p{ margin-top: 8px;margin-bottom: 8px;}
+
+/* Footer end*/
+
+
+body,div,ul,ol,li {	margin:0;padding:0;}
+
+a,a:link,a:visited,a:hover {color:#2e577a;text-decoration:none;}
+
+.clear {clear:both;}
+
+body {line-height: 1.6em;font:10px Calibri;}
+
+#placemainmenu {width:997px;height: 51px;margin: -10px 10px 0 1px;background: url(../images/mainmenu.png) no-repeat;}
+
+#mainmenu {width:100%;height: 42px;float: left;margin: 4px 0 0 4px;display: inline;}
+
+#mainmenu li {height: 42px;float: left;display: inline;background: url(../images/sepmenu.png) no-repeat 100% 0;position: relative;}
+
+#mainmenu li a, #mainmenu li a:link, #mainmenu li a:visited {height: 30px;float: left;padding: 12px 15px 0 15px;font-weight: bold;
+	font-size: 90%;font-family:verdana,helvetica,arial,sans-serif;}
+	
+#mainmenu li:hover a, #mainmenu li:hover a:link, #mainmenu li:hover a:visited, #mainmenu li.active a, #mainmenu li.active a:link, 
+
+#mainmenu li.active a:visited {background: #483D8B;color: #fff;text-decoration: none;}
+
+#placemainmenu ul li .dropdown1 {position:absolute;z-index:500;display:none;width:228px;margin:29px 0 0 0;left:-16px;padding: 0;}
+
+
+#placemainmenu ul li .dropdown1 .dropdowntop {width: 228px;height: 30px;background: url(../images/dropdown_top1.png) no-repeat;}
+
+#placemainmenu ul li .dropdown1 .dropdownbottom {width: 228px;background: url(../images/dropdown_bottom1.png) no-repeat 0 100%;
+	padding: 0 0 30px 0;}
+	
+#placemainmenu #mainmenu li:hover a.linkdropbig, #placemainmenu #mainmenu li:hover a.linkdropbig:link, #placemainmenu #mainmenu 
+
+li:hover a.linkdropbig:visited {float: left;width: 287px;height: 20px;border-bottom: 1px solid #e3e3e3;background: none;color: #483D8B;font-size: 80%;font-family:verdana,helvetica,arial,sans-serif;padding: 0 0 0 5px;margin: 0 0 0 29px;}
+
+#placemainmenu #mainmenu li:hover a.linkdropbig:hover {text-decoration: underline;}
+
+#placemainmenu ul li .dropdown1 ul.menudrop1 {width: 170px;margin: 0 0 0 29px;}
+
+#placemainmenu ul li .dropdown1 ul.menudrop1 li {width: 170px;height:29px;background: none;padding: 0;margin: 0;display: inline;
+	float: left;border-bottom: 1px solid #ededed;}
+	
+#placemainmenu #mainmenu li:hover ul.menudrop1 a, #placemainmenu #mainmenu li:hover ul.menudrop1 a:link, #placemainmenu #mainmenu li:hover ul.menudrop1 a:visited {
+	color:#818181;
+	font-size: 80%;
+	font-family:verdana,helvetica,arial,sans-serif;
+	text-transform: none;
+	margin: 0;
+	background: none;
+	display: inline;
+	float: left;
+	height: 21px;
+	width: 160px;
+	padding: 8px 5px 0 5px;}
+	
+#placemainmenu #mainmenu li:hover ul li:hover a:hover, #placemainmenu #mainmenu li ul li:hover a:hover, #placemainmenu #mainmenu li:hover ul li:hover a {text-decoration:none;color:#fff;background: #483D8B;}
+div#placemainmenu li:hover .dropdown1,
+div#placemainmenu li li:hover .dropdown1
+{display:none;}
+div#placemainmenu li:hover .dropdown1,
+div#placemainmenu li li:hover .dropdown1
+{display:block;cursor:pointer;}

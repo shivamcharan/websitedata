@@ -1,0 +1,161 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* Feel free to use and learn with this CSS, but don't copy my design. Thanks for visiting! */
+body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none !important;
+}
+a:focus {
+	outline: none !important;
+}
+.alignCenter {
+	text-align: center;
+}
+.alignJustify {
+	text-align: justify;
+}
+.alignLeft {
+	text-align: left;
+}
+.alignVerticalMiddle {
+	vertical-align: middle;
+}
+.alignRight {
+	text-align: right;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+.clearBoth {
+	clear: both !important;
+}
+.cursorNormal, .cursorDefault {
+	cursor: default;
+}
+.displayBlock {
+	display: block;
+}
+.displayNone {
+	display: none;
+}
+.floatLeft {
+	float: left;
+}
+.floatNone {
+	float: none;
+}
+.floatRight {
+	float: right;
+}
+:focus {
+	outline: 0;
+}
+.fontBold {
+	font-weight: bold;
+}
+.fontItalic {
+	font-style: italic;
+}
+.fontUnderline {
+	text-decoration: underline;
+}
+.fontOverline {
+	text-decoration: overline;
+}
+.fontUnderline {
+	text-decoration: underline;
+}
+.fontLineThrough {
+	text-decoration: line-through;
+}
+.heightAuto {
+	height: auto;
+}
+img {
+	border: 0px;
+}
+.indent {
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+.cursor, .cursorPointer, a:link, a:visited, a:hover, a:active {
+	cursor: pointer;
+}
+li {
+	white-space: nowrap !important;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.noBackground {
+	background: none;
+}
+.noBorder {
+	border: none;
+}
+.noMargin {
+	margin: 0;
+}
+.noPadding {
+	padding: 0;
+}
+.overflowHidden {
+	overflow: hidden;
+}
+.overflowScroll {
+	overflow: scroll;
+}
+.overflowVisible {
+	overflow: visible;
+}
+.positionAbsolute {
+	position: absolute;
+}
+.positionRelative {
+	position: relative;
+}
+.positionFixed {
+	position: fixed;
+}
+.sub {
+	vertical-align: text-bottom;
+}
+.sup {
+	vertical-align: text-top;
+}
+ul {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.visibilityHidden {
+	visibility: hidden;
+}
+.visibilityVisible {
+	visibility: visible;
+}
+.whitespaceWrap {
+	white-space: normal;
+}
+.whiteSpaceNoWrap {
+	white-space: nowrap;
+}
+.widthAuto {
+	width: auto;
+}

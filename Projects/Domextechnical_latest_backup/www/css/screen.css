@@ -1,0 +1,86 @@
+.graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{ margin:0; padding:0; display:block; overflow:hidden; text-indent:-8000px;
+ }
+#slider{ height:401px; margin: 0; overflow: hidden; width: 950px;  }
+#slidercontent{ margin-top:-20px; }			
+#slider ul, #slider li, { margin:0; padding:0; float:left; list-style:none; display:inline; height:401px; }
+#slider ul li{ width:950px; height:330px; overflow:hidden; }	
+#prevBtn, #nextBtn, #slider1next, #slider1prev{ display:block; width:30px; height:77px; position:absolute; left:-30px; top:71px;
+z-index:1000; }	
+	#nextBtn, #slider1next{ 
+		left:696px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:30px;
+		height:77px;
+		}	
+	#nextBtn a, #slider1next a{ 
+		}	
+	ol#controls{
+		margin:-20px 0 0 16px;
+		padding:0;
+		height:16px;
+		float:right;
+		position:relative;	
+		}
+	ol#controls li{
+		margin:0 10px 0 0; 
+		padding:0;
+		float:left;
+		list-style:none;
+		height:15px;
+		line-height:28px;
+		}
+	ol#controls li a{
+		float:left;
+		height:14px;
+		line-height:16px;
+		font-size:1px;
+		background:url(../images/active_1.png) no-repeat;
+		text-decoration:none;
+		text-indent:-9999px;
+		width:15px;
+		}
+	ol#controls li.current a{
+		background: url(../images/active.png) no-repeat;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+.side_imge{
+	float:right;
+	width:950px;
+	font-size:0;
+	height:330px;
+	background:url(../images/banner.jpg) no-repeat;
+}
+.side_imge1{
+	float:right;
+	width:950px;
+	font-size:0;
+	height:330px;
+	background: url(../images/home_banner2.jpg) no-repeat;
+	top:-5px;
+}
+.side_imge2{
+	float:right;
+	width:950px;
+	font-size:0;
+	height:330px;
+	background:url(../images/home_banner1.jpg) no-repeat;
+}
+.side_imge3{
+	float:right;
+	width:950px;
+	font-size:0;
+	height:330px;
+	background:url(../images/home_banner3.jpg) no-repeat;
+}
+.side_imge4{
+	float:right;
+	width:950px;
+	font-size:0;
+	height:330px;
+	background: url(../images/home_banner4.jpg) no-repeat;
+}
+

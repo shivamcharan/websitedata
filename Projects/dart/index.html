@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dart Inc</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="demo-assets/css/demo-styles.css" />
+    <!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="demo-assets/css/demo-styles-ie.css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/sequencejs-theme.apple-style.css" />
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Magra:400,700'>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='scripts/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <script type="text/javascript" src="scripts/sequence.jquery-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $status = $(".status");
+            var options = {
+                autoPlayDelay: 4000,
+                hidePreloaderDelay: 500,
+                nextButton: ".next",
+                prevButton: ".prev",
+                pauseButton: ".pause",
+                hidePreloaderusingCSS: false,
+                animateStartingFrameIn: true,
+                transitionThreshold: 500,
+                pauseOnHover: false,
+                fallbackTheme: {
+                    speed: 500
+                },
+                customKeyEvents: {
+                    80: "pause"
+                },
+                afterNextFrameAnimatesIn: function () {
+                    if (sequence.settings.autoPlay) {
+                        $status.addClass("active").css("opacity", 1);
+                    }
+                    $(".prev, .next").css("cursor", "pointer").animate({ "opacity": 1 }, 500);
+                },
+                beforeCurrentFrameAnimatesOut: function () {
+                    $status.animate({ "opacity": 0 }, 500, function () {
+                        $status.removeClass("active");
+                    });
+                    $(".prev, .next").css("cursor", "auto").animate({ "opacity": .7 }, 500);
+                },
+                paused: function () {
+                    $status.animate({ "opacity": 0 }, 500, function () {
+                        $status.removeClass("active").addClass("paused");
+                    });
+                },
+                unpaused: function () {
+                    $status.removeClass("active paused");
+                }
+            };
+
+            var sequence = $("#sequence").sequence(options).data("sequence");
+        })	
+    </script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div id="header">
+        <ul class="controls">
+            <li class="status"></li>
+            <li class="prev"></li>
+            <li class="pause"></li>
+            <li class="next"></li>
+        </ul>
+        <div id="sequence">
+            <ul>
+                <li>
+                    <div class="intro animate-in">
+                        <h2>
+                            Dart Incorporation</h2>
+                        <h3>
+                            Learn Earn Work
+                        </h3>
+                    </div>
+                    <img class="iphone animate-in" src="images/iphone.png" alt="iPhone4" />
+                    <img class="iphone-shadow animate-in" src="images/iphone-shadow.png" alt="" />
+                </li>
+                <li>
+                    <img class="ipad" src="images/ipad.png" alt="iPad" />
+                    <div class="slide2">
+                        <h2>
+                            Dart Education</h2>
+                        <p>
+                            We Teach Concept and Practical</p>
+                    </div>
+                    <img class="ipad-shadow" src="images/ipad-shadow.png" alt="" />
+                </li>
+                <li>
+                    <div class="slide3">
+                        <h2>
+                            Dart Animation</h2>
+                        <p>
+                            Animate Real World in to Technical</p>
+                    </div>
+                    <img class="iphone2" src="images/iphone.png" alt="iPhone4" />
+                    <img class="iphone2-shadow" src="images/iphone-shadow.png" alt="" />
+                    <img class="iphone3" src="images/iphone.png" alt="iPhone4" />
+                    <img class="iphone3-shadow" src="images/iphone-shadow.png" alt="" />
+                    <img class="iphone4" src="images/iphone.png" alt="iPhone4" />
+                    <img class="iphone4-shadow" src="images/iphone-shadow.png" alt="" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="content">
+            <img src="images/Dart-Inc.png" alt="Dart Inc" />
+            <p>
+                &nbsp;</p>
+            <p>
+                Dart Inc. is a multidisciplinary design studio whose focus lies at the intersection
+                of insight and inspiration which centers on business ideas, technolgy and culture.
+                Innovation to us is being receptive to cultural and market trends and aligning client
+                objectives, resources and culture to our design and strategies in respect to getting
+                human-centered and more valuable outcomes for our clients.</p>
+        </div>
+        <div id="aside">
+            <h3>
+                Dart Inc Features</h3>
+            <ul id="features">
+                <li>We are The World of Playing Game.</li>
+                <li>Education we Provide to the Success</li>
+                <li>Our core areas of competency include architecture design, graphics and Animation</li>
+                <li>Supports touch devices and swiping</li>
+                <li>Supports responsive layouts</li>
+                <li>Visual Merchandising, Photography, Printing / Packaging, PR / Promotions, film and
+                    animation etc. </li>
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <!--code for the demo overlay and details, not needed for the demo to work-->
+    <iframe id="twttrHubFrame" allowtransparency="true" frameborder="0" scrolling="no"
+        tabindex="0" name="twttrHubFrame" style="position: absolute; top: -9999em; width: 10px;
+        height: 10px;" src="http://platform.twitter.com/widgets/hub.1326407570.html">
+    </iframe>
+    <div id="demo-details" class="bottom">
+        <div id="demo-links" class="float-left">
+            <ul class="theme-title">
+                <li>
+                    <h1>
+                        <a class="no-underline" href="http://www.dartinc.in/" title="Dart Inc Homepage">A
+                            <img class="logo-small" src="demo-assets/images/Dart-Inc-smal.png" alt="Dart Inc" />
+                        </a>: &nbsp; <a href="index.html" id="menucss1">Home</a>| <a href="index.html" id="menucss2">
+                            About Us</a> | <a href="index.html" id="menucss3">Services</a>| <a href="index.html"
+                                id="menucss4">Contact Us</a>
+                    </h1>
+                </li>
+            </ul>
+        </div>
+        <ul id="share">
+            <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button"
+                data-via="IanLunn" data-related="IanLunn" data-count="none">Tweet</a>
+                <script>                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+            </li>
+            <li class="facebook">
+                <div id="fb-root">
+                </div>
+                <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#appId=230199133677630&amp;xfbml=1"></script>
+                <fb:like href="http://www.facebook.com/EyeriseTechnologies" send="true" layout="button_count"
+                    width="180" show_faces="false" action="like" font="verdana"></fb:like>
+            </li>
+            <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button"
+                data-url="https://twitter.com/#!/EYERISETECH" data-count="horizontal" data-via="EYERISETECH">
+                Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </li>
+            <li class="twitter">
+                <div class="twitter-follow-button">
+                    <a href="https://twitter.com/IanLunn" class="twitter-follow-button" data-show-count="false">
+                        Follow @IanLunn</a>
+                    <script>                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--//code for the demo overlay and details, not needed for the demo to work-->
+    <script type="text/javascript">
+        window.___gcfg = { lang: 'en-GB' };
+
+        (function () {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+</body>
+</html>

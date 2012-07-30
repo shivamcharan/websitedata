@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+  <!--[if IE 6]>
+	<script type="text/javascript" src="unitpngfix.js"></script>
+<![endif]-->
+    <!--photo effect-->
+    <script type="text/javascript" src="js/jquery1.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('#gallery a').lightBox();
+        });
+    </script>
+    <style type="text/css">
+        
+         .confirmdiv
+        {
+            visibility:hidden;
+            border-left: 5px none #a4c3ca;
+            border-right: 5px none #a4c3ca;
+            border-top: 5px none #c4d9df;
+            border-bottom: 5px none #83afb7;
+            position: absolute; width: 220px; 
+            height: 116px; top: 184px; 
+            left: 405px;
+            background-color: #003A53;
+            background-image: -webkit-gradient(linear,left top,left right,color-stop(0, #d4e8ec),color-stop(1, #fff));
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            padding: 5px;
+            }
+        
+                 
+        /* jQuery lightBox plugin - Gallery style */
+        #gallery
+        {
+            background-color: transparent;
+            padding: -10px;
+            width: 976px;
+        }
+        #gallery ul
+        {
+            list-style: none;
+            width: 923px;
+        }
+        #gallery ul li
+        {
+            display: inline;
+        }
+        #gallery ul img
+        {
+            border: 5px solid #3e3e3e;
+            border-width: 5px 5px 20px;
+        }
+        #gallery ul a:hover img
+        {
+            border: 5px solid #fff;
+            border-width: 5px 5px 20px;
+            color: #fff;
+        }
+        #gallery ul a:hover
+        {
+            color: #fff;
+        }
+        .maintablecategory
+        {
+            padding: 5px 5px 5px 5px;
+            width: 720px;
+            border-color: White;
+            border-width: 1px;
+            color: Lime;
+            font-family: Calisto MT;
+        }
+        .name
+        {
+            color: Lime;
+        }
+        .tdimage
+        {
+            border-color: White;
+            border-width: 1px;
+        }
+        
+        
+       
+        
+/* button 
+---------------------------------------------- */
+.button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.bigrounded {
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+.medium {
+	font-size: 12px;
+	padding: .4em 1.5em .42em;
+}
+.small {
+	font-size: 11px;
+	padding: .2em 1em .275em;
+}
+
+/* color styles 
+---------------------------------------------- */
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /* red */
+.red {
+	color: #faddde;
+	border: solid 1px #980c10;
+	background: #d81b21;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+	background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+}
+.red:hover {
+	background: #b61318;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+	background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');
+}
+.red:active {
+	color: #de898c;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+	background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
+}
+        
+        
+  
+        #confirmform
+        {
+            width: 192px;
+            top: 9px;
+            left: 10px;
+            height: 88px;
+        }
+        
+        
+  
+        #name
+        {
+            margin-top: 0px;
+        }
+        
+        
+  
+    </style>
+
+       <script language="JavaScript" type="text/javascript">
+
+
+
+
+           function show() {
+               
+               if (document.getElementById("confirm").style.visibility == 'hidden')
+           {
+
+               document.getElementById("confirm").style.visibility = 'visible';
+               document.getElementById("hidebutton").style.visibility = 'visible';
+               }
+               else
+               {
+                   document.getElementById("confirm").style.visibility = 'hidden';
+                   document.getElementById("hidebutton").style.visibility = 'hidden';
+               }
+           }
+           function hide() {
+
+               document.getElementById("confirm").style.visibility = 'hidden';
+               document.getElementById("hidebutton").style.visibility = 'hidden';
+               
+
+
+           }
+		
+         
+
+    </script>
+    <script language="javascript" type="text/javascript">
+
+
+        function loginform_onclick() {
+
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            var number = document.getElementById("mobile").value;
+            var email = document.getElementById("email").value;
+
+            if (document.getElementById("name").value == "Name") {
+                alert("Please Enter Name");
+                return false;
+            }
+            if (document.getElementById("email").value == "E-mail") {
+                alert("please Enter E-mail");
+                return false;
+            }
+            if (!emailPattern.test(email)) {
+                alert("Enter Valid Email Address");
+                return false;
+            }
+
+            if (document.getElementById("mobile").value == "Mobile No.") {
+                alert("please Enter Mobile No.");
+                return false;
+            }
+            if (number.length < 10) {
+                alert("Please Enter Valid Mobile no");
+                return false;
+            }
+
+        }
+
+
+
+
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+        function isAlphabetKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if ((charCode > 32 && charCode < 65) || (charCode > 90 && charCode < 97))
+                return false;
+
+            return true;
+        }
+
+
+
+
+
+    </script>
+</head>
+<body>
+<center><div id="gallery">
+<!--<p style="position: absolute; top: 81px; left: 240px;">Click here for sample issue.-->
+
+
+
+
+<!-- Codes by HTMLcodes.me -->
+
+
+
+
+
+
+
+
+
+<!--</p>-->
+               
+                <div align="center">
+                
+                
+                </div>
+                <div id="confirm" class="confirmdiv" style="visibility:hidden;" >
+           <img alt="close" src="images/Close.png" width="20"  style="position: relative; top: 5px; left: 101px; height: 18px; cursor:pointer;" onclick="hide();" />
+             <form id="confirmform" action="sendsample.php" method="post" 
+    onsubmit="return loginform_onclick();" style="position: absolute" >
+             <input id="name" name="name" type="text" value="Name" onfocus="if (this.value ==
+'Name') this.value = '';" onblur="if (this.value == '') this.value = 'Name';"  onkeypress="return isAlphabetKey(event);" /><br />
+<input id="email" name="email" type="text" value="E-mail" onfocus="if (this.value == 'E-mail') this.value
+= '';" onblur="if (this.value == '') this.value = 'E-mail';" /><br />
+<input id="mobile" name="mobile" type="text" value="Mobile No." onfocus="if (this.value == 'Mobile No.') this.value
+= '';" onblur="if (this.value == '') this.value = 'Mobile No.';" 
+                    onkeypress="return isNumberKey(event);" maxlength="10" />
+                    
+             <input id="Submit1" type="submit" value="OK"  />
+             <input id="Reset1" type="reset" value="reset" />
+             </form>
+             </div>
+<div>
+	<button  class="button red bigrounded" onclick="show();">Click Here For Download in Pdf format</button>
+	<br />
+   </div>
+
+
+               
+            </div></center>
+ 
+</body>
+</html>

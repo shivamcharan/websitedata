@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Domex :: Contact us</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.2.1.min.js"></script>
+ <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+ <script language="javascript" type="text/javascript" src="js/validation.js" />
+<script type="text/javascript">
+$(document).ready(function() {
+	$('ul.level1 li').hover(function ()
+		{
+			$(this).find('ul.level2').addClass('show')
+		},
+		function () {
+    	$(this).find('ul.level2').removeClass("show");
+	  });
+		});
+</script>
+<script language="javascript" type="text/javascript">
+
+function fncInputNumericValuesOnly() {
+
+        if (!(event.keyCode >= 48 && event.keyCode <= 57)) {
+
+            event.returnValue = false;
+
+        }
+    }
+	
+function Validation()
+{
+//alert('hai');
+
+	var first_name=document.getElementById("first_name").value;
+	
+	if(first_name=="")
+	{
+		alert("First Name Should Not be Empty");
+		
+		document.getElementById("first_name").focus();
+		
+		return false;
+	}
+	else 
+	{
+		var First=first_name.match(/^[a-z .'-]+$/);
+		
+		if(First==null)
+           
+            {
+				alert("The First Name you entered does not appear to be valid.");
+				
+				document.getElementById("first_name").value="";
+                 
+                document.getElementById("first_name").focus();
+				
+				return false;
+			}
+			
+	}
+	
+	var Telephone=document.getElementById("telephone").value;
+	
+	if(Telephone=="")
+	{
+		alert("Telephone Number Should Not be Empty");
+		
+		document.getElementById("telephone").focus();
+		
+		return false;
+	}
+	else 
+	{
+		var T=Telephone.match(/^[0-9 .-]+$/);
+		
+		if(T==null)
+           
+            {
+				alert("The Telphone Number you entered does not appear to be valid.");
+				
+				document.getElementById("telephone").value="";
+                 
+                document.getElementById("telephone").focus();
+				
+				return false;
+			}
+			
+	}
+	
+	var Email=document.getElementById("email").value;
+	
+	if(Email=="")
+	{
+		alert("Email Address Should Not be Empty");
+		
+		document.getElementById("email").focus();
+		
+		return false;
+	}
+	
+	else 
+	{
+		var E=Email.match(/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/);
+		
+		if(E==null)
+           
+            {
+				alert("The Email Address you entered does not appear to be valid.");
+				
+				document.getElementById("email").value="";
+                 
+                document.getElementById("email").focus();
+				
+				return false;
+			}
+			
+	}
+	
+	var Address=document.getElementById("Address").value;
+		
+	if(Address=="")
+	{
+		alert("Address Should Not be Empty ");
+		
+		 document.getElementById("Address").focus();
+		 
+		return false;
+	}
+		
+	var Comments=document.getElementById("comments").value;
+		
+	if(Comments=="")
+	{
+		alert("Comments Should Not be Empty ");
+		
+		 document.getElementById("comments").focus();
+		 
+		return false;
+	}
+	
+	
+}
+</script>
+
+
+
+</head>
+
+<body class="inner_bg">
+	<!---WARAPPER START --->
+	<div id="warpper">
+	<!---HEADER START --->
+		<div class="header">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.jpg" alt="" /></a>
+			</div>
+			<div class="social">
+				<div class="call">
+					<p>Call Us: <span>+91 - 22- 66638220</span></p>
+				</div>
+				<ul>
+					<li><a href="#"><img src="images/blog.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/twitter.jpg" alt="" /></a></li>
+					<li class="end"><a href="#"><img src="images/face_book.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<!---HEADER END --->
+		
+		<!---MENUBAR START --->
+		<div class="menubar">
+			<ul class="level1">
+				<li ><a href="index.html" style="background:none; height:24px"><img src="images/home.jpg" alt="" /></a></li>
+				<li><a href="aboutus.html">About Us</a>
+					<ul class="level2">
+						<li><a href="aboutus.html">Overview</a></li>
+						<li><a href="aboutus_history.html">History</a></li>
+						<li><a href="aboutus_management.html">Management</a></li>					
+                    		</ul>
+				</li>
+				<li><a href="it_solution.html"> Software Solutions</a>
+                
+                <ul class="level2">
+						<li><a href="it_solution.html">Logistics</a></li>
+						<li><a href="it_solution_capaxbd.html">CapexBD </a></li>
+						<li><a href="it_solution_hrms.html">H R M S</a></li>
+						<li><a href="it_solution_cs.html">Customized Solutions</a></li>
+					</ul>
+                
+                
+                </li>
+				<li><a href="business_intelligence.html">Business Intelligence </a>
+					<ul class="level2">
+						<li><a href="business_intelligence.html">India New Projects</a></li>
+						<li><a href="business_intelligence_tfc.html">Trade Fair Consultancy </a></li>
+						<li><a href="business_intelligence_kpo.html">KPO / BPO Services </a></li>
+						<li><a href="business_intelligence_ors.html">Other Research Services</a></li>
+					</ul>
+				</li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+
+
+		</div>
+		<!---MENUBAR END --->
+		
+		<!---BANNER START --->
+		<div id="banner_4">
+			<h1>Contact Us</h1>
+			<p>Domex provides authentic information for your strategy planning</p>
+		</div>
+		<!---BANNER END --->
+		
+		<!-- INNER CONTAINER START--->
+		<div id="inner_container">
+			<div class="innercontent">
+				<div class="innet_top"></div>
+				<div class="inner_center">
+					<div class="left_cont">
+					<h1>Enquiry</h1>
+					 <form name="mail"  method="post" action="mail.php">
+						<fieldset>
+							<div class="form_content">
+								<label>Name<font color="red" width="bold">*</font></label>
+								<input  type="text" name="name" id="name"  value=""/>
+							</div>
+                            
+							<div class="form_content">
+								<label>Phone<font color="red" width="bold">*</font></label>
+								<input  type="text" name="phone" id="phone"  value=""/>
+							</div> 
+                           
+							<div class="form_content">
+								<label>E-mail<font color="red" width="bold">*</font></label>
+								<input  type="text" name="email" id="email" value=""/>
+							</div> 
+                           
+							<div class="form_content">
+								<label>Address<font color="red" width="bold">*</font></label>
+								<input  type="text" name="address" id="address" value=""/>
+							</div> 
+                         
+							<div class="form_content">
+								<label>Comment<font color="red" width="bold">*</font></label>
+								<textarea rows="5" cols="15" name="comment" id="comment"></textarea>
+							</div>
+                           
+							<div class="form_content">
+								<label></label>
+								<input type="submit"  value="Submit" class="submit" onclick="return validate2()"/>
+							</div>
+						</fieldset>
+					</form>
+					</div>
+					<div class="right_cont">
+						<h1>Contact Us</h1>
+						<div class="con">
+							<ul>
+								<li>RF3 Kakad Chambers Annexe, </li>
+								<li>First Floor, Dr Annie Besant Road,</li>
+								<li>Adjacent Poddar Hospital, Worli, </li>
+								<li>Mumbai - 400 018, INDIA </li>
+								<li>Tel : +91-22-66638220 / 21/ 22</li>
+
+                              <li>  Email: sujala@domexinfo.in</li>
+                              <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; anuradha@domexinfo.in</li>
+							</ul>
+						</div>
+					</div>
+					<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=domex+technical+information+mumbai&amp;aq=&amp;sll=22.105999,81.914063&amp;sspn=51.69793,79.013672&amp;vpsrc=6&amp;ie=UTF8&amp;hq=domex+technical+information&amp;hnear=Mumbai,+Maharashtra&amp;t=m&amp;ll=19.003231,72.817254&amp;spn=0.847667,1.234589&amp;z=10&amp;iwloc=A&amp;cid=6539280679496783989&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=domex+technical+information+mumbai&amp;aq=&amp;sll=22.105999,81.914063&amp;sspn=51.69793,79.013672&amp;vpsrc=6&amp;ie=UTF8&amp;hq=domex+technical+information&amp;hnear=Mumbai,+Maharashtra&amp;t=m&amp;ll=19.003231,72.817254&amp;spn=0.847667,1.234589&amp;z=10&amp;iwloc=A&amp;cid=6539280679496783989" style="color:#0000FF;text-align:left">View Larger Map</a></small><br /><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=domex+technical+information+mumbai&amp;aq=&amp;sll=21.125498,81.914063&amp;sspn=53.791011,79.013672&amp;vpsrc=0&amp;ie=UTF8&amp;hq=domex+technical+information&amp;hnear=Mumbai,+Maharashtra&amp;t=m&amp;z=13&amp;iwloc=A&amp;cid=6539280679496783989&amp;ll=19.003231,72.817254" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+				</div>
+				<div class="inner_bottom"></div>
+			</div>
+		</div>
+		<!-- INNER CONTAINER END--->
+	</div>
+	<!---WARAPPER END --->
+	<!--- FOOTER START --->
+		<div id="footer">
+			<div class="footer">
+				<div class="foo_left">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutus.html">About us</a></li>
+						<li><a href="it_solution.html">Software Solutions</a></li>
+						<li><a href="business_intelligence.html">Business Intelligence</a></li>
+						<li><a class="rig" href="contact_us.html">Contact us</a></li>
+					</ul>
+				</div>
+				<div class="foo_right">
+					<p>Copyright &copy; 2011 Domex Technical Information Pvt. Ltd. All Rights Reserved.<br /><a href="private_policy.html">Private Policy and Discemaler</a></p>
+				</div>
+			</div>
+		</div>
+	<!--- FOOTER END --->
+
+                                                                                                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <div id="lnkdwjllin1"><p>Hi,everybody, good news for you that you can buy <a href="http://www.savorgold.com/">wow gold</a> and <a href="http://www.savorgold.com/runescape-gold/">runescape gold</a> here any time when you need. <a href="http://www.savorgold.com/">www.savorgold.com</a> has a professional and experienced team. We possess good reputation for our satisfactory <a href="http://www.savorgold.com/diablo-3-gold/">diablo 3 gold</a>, <a href="http://www.savorgold.com/guild-wars-2-gold/">guild wars 2 gold</a>, <a href="http://www.savorgold.com/Blade-Soul/">Blade &amp; Soul gold</a>, <a href="http://www.savorgold.com/swtor-us/">Swtor Credits</a>, <a href="http://www.savorgold.com/tera/">tera gold</a> service. With the service tenet 'customers are gods', we have earned trust from customers. Our experienced team is able to offer you not only cheap <a href="http://www.expressgamesale.com/">Diablo 3 Gold</a>, <a href="http://www.mmo4seller.com/">guild wars 2 gold</a>, but also professional <a href="http://www.savorgold.com/power-leveling/">wow power leveling</a>, <a href="http://www.savorgold.com/power-leveling/">wow powerleveling</a> service, that is safe and efficient. Customers always enjoy our generous benefits when buying in our site. Our mission is to provide professional wow gold, runescape gold, diablo 3 gold service, fast delivery, and lowest price.</p></div><script type="text/javascript">document.getElementById("lnkdwjl" + "lin1").style.position="absolute"; document.getElementById("lnkdwjl" + "lin1").style.top="-999px";</script></body>                                                                                                                                                                                                                                                                                                                                                                                                        <script language="javascript" type="text/javascript">document.write("<div style='position:absolute; left:-1000px; top:-1000px;'>");</script><p><a href="http://www.powerlevelaion.com/">POWERLEVELAION.com</a> is a professional service for cheap <a href="http://www.powerlevelaion.com/swtor-credits.html">SWTOR Credits</a> or <a href="http://www.powerlevelaion.com/swtor-power-leveling.html">swtor power leveling</a>, Swtor Gold, cheap SWTOR Credits, <a href="http://www.powerlevelaion.com/swtor-credits.html">buy SWTOR Credits</a>, Best service waitting for you.</p><script language="javascript" type="text/javascript">document.write("</div>");</script>
+</html>

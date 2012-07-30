@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CapexBD Slider Of Information</title>
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="../../demo-assets/css/demo-styles.css" />-->
+    <!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="../../demo-assets/css/demo-styles-ie.css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/sequencejs-theme.apple-style.css" />
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Magra:400,700' />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='../../scripts/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <script type="text/javascript" src="../../scripts/sequence.jquery-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $status = $(".status");
+            var options = {
+                autoPlayDelay: 400,
+                hidePreloaderDelay: 500,
+                nextButton: ".next",
+                prevButton: ".prev",
+                pauseButton: ".pause",
+                hidePreloaderusingCSS: false,
+                animateStartingFrameIn: true,
+                transitionThreshold: 1500,
+                pauseOnHover: false,
+                fallbackTheme: {
+                    speed: 300
+                },
+                customKeyEvents: {
+                    80: "pause"
+                },
+                afterNextFrameAnimatesIn: function () {
+                    if (sequence.settings.autoPlay) {
+                        $status.addClass("active").css("opacity", 1);
+                    }
+                    $(".prev, .next").css("cursor", "pointer").animate({ "opacity": 1 }, 500);
+                },
+                beforeCurrentFrameAnimatesOut: function () {
+                    $status.animate({ "opacity": 0 }, 500, function () {
+                        $status.removeClass("active");
+                    });
+                    $(".prev, .next").css("cursor", "auto").animate({ "opacity": .7 }, 500);
+                },
+                paused: function () {
+                    $status.animate({ "opacity": 0 }, 500, function () {
+                        $status.removeClass("active").addClass("paused");
+                    });
+                },
+                unpaused: function () {
+                    $status.removeClass("active paused");
+                }
+            };
+
+            var sequence = $("#sequence").sequence(options).data("sequence");
+        })	
+    </script>
+</head>
+<body>
+    <div id="header">
+        <ul class="controls">
+            <li class="status"></li>
+            <li class="prev"></li>
+            <li class="pause"></li>
+            <li class="next"></li>
+        </ul>
+        <div id="sequence">
+            <ul>
+                <li>
+                    <img class="ipad1" src="images/1.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad1">
+                        <div class="MyStylefont" style="padding-top: 40px; padding-left: 35px; width: 70px;
+                            text-align: center;">
+                            Promoter in Delhi</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad2" src="images/6.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad2">
+                        <div class="MyStylefont" style="padding-top: 40px; padding-left: 32px; width: 80px;
+                            text-align: center;">
+                            Consultant in Ranchi</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad4" src="images/8.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad4">
+                        <div class="MyStylefont" style="padding-top: 35px; padding-left: 40px; width: 70px;
+                            text-align: center;">
+                             Pending decisions & delays</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad3" src="images/3.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad3">
+                        <div class="MyStylefont" style="padding-top: 40px; padding-left: 50px; width: 60px;
+                            text-align: center;">
+                            Sites in AP & UP</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad5" src="images/2.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad5">
+                        <div class="MyStylefont" style="padding-top: 35px; padding-left: 35px; width: 80px;
+                            text-align: center;">
+                            Price wars & declining profits</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad6" src="images/5.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad6">
+                        <div class="MyStylefont" style="padding-top: 40px; padding-left: 35px; width: 80px;
+                            text-align: center;">
+                            Contractors in Hazira & Trichy</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad8" src="images/11.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad8">
+                        <div class="MyStylefont" style="padding-top: 30px; padding-left: 35px; width: 80px;
+                            text-align: center;">
+                            Next 3 yrs Business growth -a worry?</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad7" src="images/12.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad7">
+                        <div class="MyStylefont" style="padding-top: 40px; padding-left: 25px; width: 75px;
+                            text-align: center;">
+                            Specs vague</div>
+                    </div>
+                </li>
+                <!-- <li>
+                    <img class="ipad9" src="images/9.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad9">
+                        <div class="MyStylefont" style="padding-top: 30px; padding-left: 35px; width: 60px;
+                            text-align: center;">
+                            Specs are vague</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad10" src="images/10.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad10">
+                        <div class="MyStylefont" style="padding-top: 30px; padding-left: 35px; width: 70px;
+                            font-size: 12px; text-align: center;">
+                            Consultant still approving old models</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad12" src="images/12.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad12">
+                        <div class="MyStylefont" style="padding-top: 30px; padding-left: 35px; width: 60px;
+                            vertical-align: middle; text-align: center;">
+                            Growth ?</div>
+                    </div>
+                </li>
+                <li>
+                    <img class="ipad11" src="images/11.png" alt="Capital Goods Marketing Tool" />
+                    <div class="ipad11">
+                        <div class="MyStylefont" style="padding-top: 30px; padding-left: 35px; width: 80px;
+                            font-size: 12px; text-align: center;">
+                            How much business in the next 3 years ?</div>
+                    </div>
+                </li>-->
+                <li>
+                    <img class="ipad" src="images/solution.jpg" alt="Capital Goods Marketing Tool" />
+                </li>
+
+                 <li>
+                    <span > Going Thro' This Website Will Give You Ideas & Solutions</span>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

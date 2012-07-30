@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function increase() {
+
+            var yourImg = document.getElementById('1');
+            var i = 0;
+            while (i < 126) {
+                setTimeout(function () { i++; }, 1000);
+                yourImg.style.width = i + 'px';
+
+            }
+
+        }
+
+        function increase1() {
+            var yourImg = document.getElementById('1');
+            for (var start = 1; start < 100; start++)
+                setTimeout(function () {
+                    yourImg.style.width = start + 'px';
+                
+                 }, 5000);
+        }
+
+    </script>
+    <style type="text/css">
+        #divmain11
+        {
+            height: 400px;
+            margin: 0 auto;
+            position: relative;
+            width: 990px;
+        }
+    </style>
+</head>
+<body onload="increase1();">
+    <div id="divmain11" style="background-image: url('images/capexbdcssimages/Thebackgroundhuman.png')">
+        <img src="banner/themes/apple-style/images/1.png" alt="" id="1" width="1px" />
+    </div>
+</body>
+</html>

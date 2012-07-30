@@ -1,0 +1,32 @@
+ 
+
+a {
+	color: #616264;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ff9057;
+}
+
+a img {
+  border: none;/*remove border for linked images*/
+}
+
+
+
+.highlight {background-color:#FF9D9D;border-bottom:#F30 1px solid;border-top:#F30 1px solid;padding: 4px 10px}
+
+/***** Main Layout ****/
+#container {
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;/* IE fix to center the page */
+}
+
+#content {
+  	width: 740px;
+  	margin: 0 auto;/* center the page in Firefox */
+  	text-align: left;
+	padding: 20px;
+}

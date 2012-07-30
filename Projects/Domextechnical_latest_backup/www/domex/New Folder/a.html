@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:194px;
+	top:133px;
+	width:543px;
+	height:200px;
+	z-index:1;
+}
+-->
+</style>
+<STYLE TYPE="text/css">
+<!--
+@import url(style.css);
+-->
+</STYLE>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!-- Load the slideshow JavaScript code -->
+<SCRIPT TYPE="text/javascript" SRC="slideshow.js"></SCRIPT> 
+<SCRIPT TYPE="text/javascript" SRC="a.js"></SCRIPT> 
+
+
+</head>
+
+<body>
+<FORM NAME="slideshow_form" ACTION="" METHOD="GET">
+
+<DIV ID="slideshow">
+
+<DIV ID="slideshow_controls">
+
+<INPUT TYPE="button" VALUE="play" onClick="ss.next();ss.play()">
+
+<INPUT TYPE="button" VALUE="stop" onClick="ss.pause()">
+
+&nbsp;
+
+<INPUT TYPE="button" VALUE="previous" onClick="ss.previous()">
+
+<INPUT TYPE="button" VALUE="next" onClick="ss.next()">
+
+&nbsp;
+
+<SELECT ID="slideshow_select" NAME="slideshow_select"
+onChange="ss.goto_slide(this.selectedIndex)">
+  <OPTION>Welcome to domex Technical Information Pvt. Ltd.
+</SELECT>
+
+<SCRIPT type="text/javascript">
+<!--
+
+function set_slideshow_select_options(selectlist) {
+
+  selectlist.options.length = 0;
+
+  for (var i = 0; i < ss.slides.length; i++) {
+    selectlist.options[i] = new Option();
+    selectlist.options[i].text = (i + 1) + '. ' + ss.slides[i].title;
+  }
+
+  selectlist.selectedIndex = ss.current;
+}
+
+set_slideshow_select_options(document.slideshow_form.slideshow_select);
+
+//-->
+</SCRIPT>
+
+</DIV>
+    
+
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+  <TD ALIGN=center>
+    <A ID="slideshow_image_link" HREF="javascript:ss.hotlink()"
+    TITLE="Click to view larger image"><IMG ID="slideshow_img"
+    NAME="slideshow_img" SRC="pic01i.jpg" 
+    WIDTH=150 HEIGHT=178 BORDER=0
+    STYLE="filter:progid:DXImageTransform.Microsoft.Fade()"
+    ALT="Slideshow image"></A>
+  </TD>
+  <TD ID="slideshow_text">
+
+    Welcome to the slideshow! If you see this then your browser doesn't support
+    the text-changing features of the slideshow; however, all the text should
+    appear below.
+    
+  </TD>
+</TR>
+</TABLE>
+
+</DIV>
+
+<SCRIPT TYPE="text/javascript">
+<!--
+// Tell the slideshow which image and text id to change 
+if (document.images)
+{
+  ss.image = document.images.slideshow_img;
+  ss.textid = "slideshow_text";
+
+  ss.post_update_hook = function() {
+document.slideshow_form.slideshow_select.selectedIndex = ss.current;
+}
+
+  ss.update();
+  //ss.play();
+}
+
+
+</SCRIPT>
+</body>
+</html>
